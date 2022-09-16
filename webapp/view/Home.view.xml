@@ -13,11 +13,12 @@
 				src="img/Logo-SMB.png"
 				height="80%"
 			/>
-			<ToolbarSpacer />
+			<ToolbarSpacer/>
 			<Toolbar>
 				<Label
 					labelFor="DRS1"
-					text="Datum"
+					text="Datum auswählen:"
+					width="65%"
 				/>
 				<DateRangeSelection
 					id="DRS1"
@@ -33,30 +34,29 @@
 					displayFormat="{
 						path: '/dateFormatDRS1'
 					}"
+					
 				/>
 			</Toolbar>
 		</headerContent>
+		<Title
+			level="H1"
+			titleStyle="H1"
+			id="_IDGenTitle1"
+			text="Standorte"
+			class="sapUiTinyMarginBegin sapUiMediumMarginTop"
+		/>
 		<layout:VerticalLayout
-			id="_IDGenVerticalLayout1"
-			class="sapUiResponsiveMargin"
+			width="100%"
+			class="gridWrapper"
 		>
-			<Title
-				id="_IDGenTitle1"
-				titleStyle="H2"
-				text="Standorte"
-				class="sapUiTinyMarginBegin sapUiMediumMarginTop"
-			/>
-			<layout:HorizontalLayout
-				id="_IDGenHorizontalLayout1"
-				allowWrapping="false"
-			>
+			<layout:Grid containerQuery="true">
 				<f:Card headerPosition="Top">
 					<f:header>
 						<card:Header
 							title="Standort Chur"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
-							press=".onChartPressed"
+                            press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>
@@ -104,7 +104,7 @@
 							title="Standort St. Moritz"
 							subtitle="Nr. 20xx"
 							iconSrc="./img/SMB-Chur.png"
-							press=".onChartPressed"
+                            press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>
@@ -146,7 +146,103 @@
 						</VBox>
 					</f:content>
 				</f:Card>
-			</layout:HorizontalLayout>
+				<f:Card >
+					<f:header>
+						<card:Header
+							title="Standort St. Moritz"
+							subtitle="Nr. 20xx"
+							iconSrc="./img/SMB-Chur.png"
+                            press=".onChartPressed"
+						/>
+					</f:header>
+					<f:content>
+						<VBox
+							height="10rem"
+							class="sapUiSmallMargin"
+							justifyContent="SpaceBetween"
+						>
+							<HBox justifyContent="SpaceAround">
+								<FlexBox
+									width="20rem"
+									height="10rem"
+									alignItems="Start"
+									justifyContent="SpaceBetween"
+								>
+									<items>
+										<m:InteractiveDonutChart>
+											<m:segments>
+												<m:InteractiveDonutChartSegment
+													label="Ausgeführt"
+													value="40.0"
+													displayedValue="40.0%"
+												/>
+												<m:InteractiveDonutChartSegment
+													label="in Bearbeitung"
+													value="21.5"
+													displayedValue="21.5%"
+												/>
+												<m:InteractiveDonutChartSegment
+													label="erfasst"
+													value="38.5"
+													displayedValue="38.5%"
+												/>
+											</m:segments>
+										</m:InteractiveDonutChart>
+									</items>
+								</FlexBox>
+							</HBox>
+						</VBox>
+					</f:content>
+				</f:Card>
+				<f:Card >
+					<f:header>
+						<card:Header
+							title="Standort St. Moritz"
+							subtitle="Nr. 20xx"
+							iconSrc="./img/SMB-Chur.png"
+                            press=".onChartPressed"
+						/>
+					</f:header>
+					<f:content>
+						<VBox
+							height="10rem"
+							class="sapUiSmallMargin"
+							justifyContent="SpaceBetween"
+						>
+							<HBox justifyContent="SpaceAround">
+								<FlexBox
+									width="20rem"
+									height="10rem"
+									alignItems="Start"
+									justifyContent="SpaceBetween"
+								>
+									<items>
+										<m:InteractiveDonutChart>
+											<m:segments>
+												<m:InteractiveDonutChartSegment
+													label="Ausgeführt"
+													value="40.0"
+													displayedValue="40.0%"
+												/>
+												<m:InteractiveDonutChartSegment
+													label="in Bearbeitung"
+													value="21.5"
+													displayedValue="21.5%"
+												/>
+												<m:InteractiveDonutChartSegment
+													label="erfasst"
+													value="38.5"
+													displayedValue="38.5%"
+												/>
+											</m:segments>
+										</m:InteractiveDonutChart>
+									</items>
+								</FlexBox>
+							</HBox>
+						</VBox>
+					</f:content>
+				</f:Card>
+			</layout:Grid>
 		</layout:VerticalLayout>
 	</Page>
 </mvc:View>

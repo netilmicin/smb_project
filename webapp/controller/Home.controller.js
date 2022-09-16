@@ -11,7 +11,6 @@ sap.ui.define([
         }, */
 
 		onChartPressed: function(oEvent) {
-            console.log("hello there")
 			var oRouter = this.getOwnerComponent().getRouter();
 			oRouter.navTo("secondPage",{});
 		},
