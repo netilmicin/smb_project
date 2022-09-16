@@ -1,0 +1,151 @@
+<mvc:View
+	controllerName="smbproject1.0.controller.Home"
+	xmlns="sap.m"
+	xmlns:m="sap.suite.ui.microchart"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:layout="sap.ui.layout"
+	xmlns:f="sap.f"
+	xmlns:card="sap.f.cards"
+>
+	<Page id="home">
+		<headerContent>
+			<Image
+				src="img/Logo-SMB.png"
+				width="7%"
+			/>
+			<ToolbarSpacer width="71%"/>
+			<Toolbar>
+				<Label
+					labelFor="DRS1"
+					text="Datum"
+				/>
+				<DateRangeSelection
+					id="DRS1"
+					delimiter="{
+						path: '/delimiterDRS1'
+					}"
+					dateValue="{
+						path: '/dateValueDRS1'
+					}"
+					secondDateValue="{
+						path: '/secondDateValueDRS1'
+					}"
+					displayFormat="{
+						path: '/dateFormatDRS1'
+					}"
+					change="handleChange"
+				/>
+			</Toolbar>
+		</headerContent>
+			<layout:VerticalLayout
+				id="_IDGenVerticalLayout1"
+				class="sapUiResponsiveMargin"
+			>
+					<Title
+						id="_IDGenTitle1"
+						titleStyle="H2"
+						text="Standorte"
+						class="sapUiTinyMarginBegin sapUiMediumMarginTop"
+					/>
+				<layout:HorizontalLayout
+					id="_IDGenHorizontalLayout1"
+					allowWrapping="false"
+				>
+					<f:Card headerPosition="Top">
+						<f:header>
+							<card:Header
+								title="Standort Chur"
+								subtitle="Nr. 2050"
+								iconSrc="./img/SMB-Chur.png"
+							/>
+						</f:header>
+						<f:content>
+							<VBox
+								height="10rem"
+								class="sapUiSmallMargin"
+								justifyContent="SpaceBetween"
+							>
+								<HBox justifyContent="SpaceAround">
+									<FlexBox
+										width="20rem"
+										height="10rem"
+										alignItems="Start"
+										justifyContent="SpaceBetween"
+									>
+										<items>
+											<m:InteractiveDonutChart selectionChanged="onSelectionChanged">
+												<m:segments>
+													<m:InteractiveDonutChartSegment
+														label="Ausgeführt"
+														value="40.0"
+														displayedValue="40.0%"
+													/>
+													<m:InteractiveDonutChartSegment
+														label="in Bearbeitung"
+														value="21.5"
+														displayedValue="21.5%"
+													/>
+													<m:InteractiveDonutChartSegment
+														label="erfasst"
+														value="38.5"
+														displayedValue="38.5%"
+													/>
+												</m:segments>
+											</m:InteractiveDonutChart>
+										</items>
+									</FlexBox>
+								</HBox>
+							</VBox>
+						</f:content>
+					</f:Card>
+					<f:Card headerPosition="Top">
+						<f:header>
+							<card:Header
+								title="Standort St. Moritz"
+								subtitle="Nr. 20xx"
+								iconSrc="./img/SMB-Chur.png"
+							/>
+						</f:header>
+						<f:content>
+							<VBox
+								height="10rem"
+								class="sapUiSmallMargin"
+								justifyContent="SpaceBetween"
+							>
+								<HBox justifyContent="SpaceAround">
+									<FlexBox
+										width="20rem"
+										height="10rem"
+										alignItems="Start"
+										justifyContent="SpaceBetween"
+									>
+										<items>
+											<m:InteractiveDonutChart selectionChanged="onSelectionChanged">
+												<m:segments>
+													<m:InteractiveDonutChartSegment
+														label="Ausgeführt"
+														value="40.0"
+														displayedValue="40.0%"
+													/>
+													<m:InteractiveDonutChartSegment
+														label="in Bearbeitung"
+														value="21.5"
+														displayedValue="21.5%"
+													/>
+													<m:InteractiveDonutChartSegment
+														label="erfasst"
+														value="38.5"
+														displayedValue="38.5%"
+													/>
+												</m:segments>
+											</m:InteractiveDonutChart>
+										</items>
+									</FlexBox>
+								</HBox>
+							</VBox>
+						</f:content>
+					</f:Card>
+				</layout:HorizontalLayout>
+			</layout:VerticalLayout>
+	</Page>
+</mvc:View>
