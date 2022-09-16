@@ -33,7 +33,6 @@
 					displayFormat="{
 						path: '/dateFormatDRS1'
 					}"
-					change="handleChange"
 				/>
 			</Toolbar>
 		</headerContent>
@@ -73,7 +72,7 @@
 										justifyContent="SpaceBetween"
 									>
 										<items>
-											<m:InteractiveDonutChart selectionChanged="onSelectionChanged">
+											<m:InteractiveDonutChart>
 												<m:segments>
 													<m:InteractiveDonutChartSegment
 														label="Ausgeführt"
@@ -120,7 +119,7 @@
 										justifyContent="SpaceBetween"
 									>
 										<items>
-											<m:InteractiveDonutChart selectionChanged="onSelectionChanged">
+											<m:InteractiveDonutChart>
 												<m:segments>
 													<m:InteractiveDonutChartSegment
 														label="Ausgeführt"
