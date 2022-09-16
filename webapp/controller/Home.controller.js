@@ -6,8 +6,14 @@ sap.ui.define([
 ) {
     "use strict";
     return Controller.extend("smbproject1.0.controller.Home", {
-        onNavToConfiguration: function() {
+      /*   onNavToConfiguration: function() {
             this.getRouter().navTo("configuration");
-        },
+        }, */
+
+		onChartPressed: function(oEvent) {
+            console.log("hello there")
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("secondPage",{});
+		},
     });
 });

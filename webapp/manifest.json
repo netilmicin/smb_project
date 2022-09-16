@@ -86,9 +86,9 @@
       "config": {
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
-        "type" : "View",
+        "type": "View",
         "async": true,
-        "transition" : "slide",
+        "transition": "slide",
         "path": "smbproject1.0.view",
         "controlAggregation": "pages",
         "controlId": "app",
@@ -96,15 +96,25 @@
       },
       "routes": [
         {
-          "name": "appHome",
+          "name": "home",
           "pattern": "",
           "target": "home"
+        },
+        {
+          "name": "secondPage",
+          "pattern": "/secondPage",
+          "target": "secondPage"
         }
       ],
       "targets": {
         "home": {
           "id": "home",
           "name": "Home",
+          "level": 1
+        },
+        "secondPage":{
+          "id": "secondPage",
+          "name": "SecondPage",
           "level": 1
         }
       }
