@@ -3,7 +3,6 @@
 	xmlns="sap.ui.table"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
-	xmlns:c="sap.ui.core"
 	xmlns:m="sap.m"
 	height="100%"
 >
@@ -14,7 +13,6 @@
 	>
 		<m:headerContent>
 			<m:DateRangeSelection
-				delimiter="-"
 				secondDateValue=""
 			>
 			</m:DateRangeSelection>
@@ -22,7 +20,6 @@
 		<m:content>
 			<Table
 				rows="{/ProductCollection}"
-				selectionMode="MultiToggle"
 				visibleRowCount="7"
 				paste="onPaste"
 				ariaLabelledBy="title"

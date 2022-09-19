@@ -102,8 +102,13 @@
         },
         {
           "name": "secondPage",
-          "pattern": "/secondPage",
+          "pattern": "secondPage",
           "target": "secondPage"
+        },
+        {
+          "name": "thirdPage",
+          "pattern": "thirdPage",
+          "target": "thirdPage"
         }
       ],
       "targets": {
@@ -115,6 +120,11 @@
         "secondPage": {
           "id": "secondPage",
           "name": "SecondPage",
+          "level": 1
+        },
+        "thirdPage": {
+          "id": "thirdPage",
+          "name": "thirdPage",
           "level": 1
         }
       }
@@ -131,6 +141,8 @@
         "files": [
           "SecondPage.view.xml",
           "SecondPage.controller.js",
+          "ThirdPage.view.xml",
+          "ThirdPage.controller.js",
           "manifest.json"
         ]
       }
