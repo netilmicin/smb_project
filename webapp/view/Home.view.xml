@@ -7,7 +7,7 @@
 	xmlns:f="sap.f"
 	xmlns:card="sap.f.cards"
 >
-	<Page id="home">
+	<Page id="home" title="Standorte">
 		<headerContent>
 			<Image
 				src="img/Logo-SMB.png"
@@ -38,13 +38,13 @@
 				/>
 			</Toolbar>
 		</headerContent>
-		<Title
+		<!-- <Title
 			level="H1"
 			titleStyle="H1"
 			id="_IDGenTitle1"
 			text="Standorte"
 			class="sapUiTinyMarginBegin sapUiMediumMarginTop"
-		/>
+		/> -->
 		<layout:VerticalLayout
 			width="100%"
 			class="gridWrapper"

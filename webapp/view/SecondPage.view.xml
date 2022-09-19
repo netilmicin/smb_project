@@ -3,6 +3,7 @@
 	xmlns="sap.ui.table"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
+	xmlns:core="sap.ui.core"
 	xmlns:m="sap.m"
 	height="100%"
 >
@@ -12,15 +13,62 @@
 		title="Standort>Chur"
 	>
 		<m:headerContent>
-			<m:DateRangeSelection
-				secondDateValue=""
-			>
-			</m:DateRangeSelection>
+			<m:DateRangeSelection secondDateValue=""/>
 		</m:headerContent>
 		<m:content>
+			<m:ToolbarSpacer/>
+			<m:Toolbar width="">
+				<m:content>
+					<m:Title
+						text="Optionen: "
+						level="H2"
+					/>
+					<m:ComboBox
+						id="idSelectStatus"
+						placeholder="Status"
+						change="onStatusChanged"
+					>
+						<m:items>
+							<core:Item
+								key="Ausgeführt"
+								text="Ausgeführt"
+							/>
+							<core:Item
+								key="InBearbeitung"
+								text="In Bearbeitung"
+							/>
+							<core:Item
+								key="Erfasst"
+								text="Erfasst"
+							/>
+						</m:items>
+					</m:ComboBox>
+					<m:ComboBox
+						id="idSelectCustomer"
+						placeholder="Kunde"
+						change="onKundeChanged"
+					>
+						<m:items>
+							<core:Item
+								key="Customer1"
+								text="Kunde1"
+							/>
+							<core:Item
+								key="Customer2"
+								text="Kunde2"
+							/>
+							<core:Item
+								key="Customer3"
+								text="Kunde3"
+							/>
+						</m:items>
+					</m:ComboBox>
+				</m:content>
+			</m:Toolbar>
 			<Table
+				id="orderTable"
 				rows="{/ProductCollection}"
-				visibleRowCount="7"
+				visibleRowCount="5"
 				paste="onPaste"
 				ariaLabelledBy="title"
 			>
