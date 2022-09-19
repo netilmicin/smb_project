@@ -12,11 +12,11 @@ sap.ui.define([
 
 		onInit : function() {
 			// set explored app's demo model on this sample
-			var oJSONModel = this.initSampleDataModel();
-			this.getView().setModel(oJSONModel);
+			var oJSONModel = new JSONModel("model/mockdata.json");
+			this.getView().setModel(oJSONModel, "orders");
 		},
 
-		initSampleDataModel : function() {
+		/* initSampleDataModel : function() {
 			var oModel = new JSONModel();
 
 			var oDateFormat = DateFormat.getDateInstance({source: {pattern: "timestamp"}, pattern: "dd/MM/yyyy"});
@@ -55,25 +55,7 @@ sap.ui.define([
 			});
 
 			return oModel;
-		},
-
-		updateMultipleSelection: function(oEvent) {
-			var oMultiInput = oEvent.getSource(),
-				sTokensPath = oMultiInput.getBinding("tokens").getContext().getPath() + "/" + oMultiInput.getBindingPath("tokens"),
-				aRemovedTokensKeys = oEvent.getParameter("removedTokens").map(function(oToken) {
-					return oToken.getKey();
-				}),
-				aCurrentTokensData = oMultiInput.getTokens().map(function(oToken) {
-					return {"Key" : oToken.getKey(), "Name" : oToken.getText()};
-				});
-
-			aCurrentTokensData = aCurrentTokensData.filter(function(oToken){
-				return aRemovedTokensKeys.indexOf(oToken.Key) === -1;
-			});
-
-			oMultiInput.getModel().setProperty(sTokensPath, aCurrentTokensData);
-		},
-
+		}, */
 		formatAvailableToObjectState : function(bAvailable) {
 			return bAvailable ? "Success" : "Error";
 		},
@@ -87,18 +69,13 @@ sap.ui.define([
 		onStatusChanged: function(oEvent) {
 			let oTable = this.byId("orderTable");
 			let oComboBox = this.byId("idSelectStatus");
-			let weissNoed = oComboBox.getSelectedKey();
-			switch(weissNoed){
+			let chosenKey = oComboBox.getSelectedKey();
+			switch(chosenKey){
 				case "Ausgeführt":
 					
 					break;
 			}
-		},
-
-		onKundeChanged: function(oEvent) {
-			
 		}
-
 	});
 
 });
