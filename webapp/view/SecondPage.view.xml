@@ -1,34 +1,32 @@
 <mvc:View
 	controllerName="smbproject1.0.controller.SecondPage"
-	xmlns="sap.ui.table"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:u="sap.ui.unified"
 	xmlns:core="sap.ui.core"
-	xmlns:m="sap.m"
+	xmlns="sap.m"
 	height="100%"
 >
-	<m:Page
+	<Page
 		enableScrolling="false"
 		class="sapUiContentPadding"
 		title="Standort>Chur"
 	>
-		<m:headerContent>
-			<m:DateRangeSelection secondDateValue=""/>
-		</m:headerContent>
-		<m:content>
-			<m:ToolbarSpacer/>
-			<m:Toolbar width="">
-				<m:content>
-					<m:Title
+		<headerContent>
+			<DateRangeSelection secondDateValue=""/>
+		</headerContent>
+		<content>
+			<ToolbarSpacer/>
+			<Toolbar width="">
+				<content>
+					<Title
 						text="Optionen: "
 						level="H2"
 					/>
-					<m:ComboBox
+					<ComboBox
 						id="idSelectStatus"
 						placeholder="Status"
 						change="onStatusChanged"
 					>
-						<m:items>
+						<items>
 							<core:Item
 								key="Ausgeführt"
 								text="Ausgeführt"
@@ -41,82 +39,55 @@
 								key="Erfasst"
 								text="Erfasst"
 							/>
-						</m:items>
-					</m:ComboBox>
-					<m:ComboBox
-						id="idSelectCustomer"
-						placeholder="Kunde"
-						change="onKundeChanged"
-					>
-						<m:items>
-							<core:Item
-								key="Customer1"
-								text="Kunde1"
-							/>
-							<core:Item
-								key="Customer2"
-								text="Kunde2"
-							/>
-							<core:Item
-								key="Customer3"
-								text="Kunde3"
-							/>
-						</m:items>
-					</m:ComboBox>
-				</m:content>
-			</m:Toolbar>
-			<Table
-				id="orderTable"
-				rows="{/ProductCollection}"
-				visibleRowCount="5"
-				paste="onPaste"
-				ariaLabelledBy="title"
+						</items>
+					</ComboBox>
+				</content>
+			</Toolbar>
+		</content>
+		<content>
+			<ScrollContainer
+				focusable="false"
+				height="auto"
+				horizontal="true"
+				vertical="false"
+				width="auto"
 			>
-				<columns>
-					<Column width="20%">
-						<m:Label text="Nummer"/>
-						<template>
-							<m:Text
-								text="{Name}"
-								wrapping="false"
-							/>
-						</template>
-					</Column>
-					<Column width="20%">
-						<m:Label text="Status"/>
-						<template>
-							<m:Input value="{ProductId}"/>
-						</template>
-					</Column>
-					<Column width="20%">
-						<m:Label text="Kunde"/>
-						<template>
-							<m:Label text="{Quantity}"/>
-						</template>
-					</Column>
-					<Column width="20%">
-						<m:Label text="Datum"/>
-						<template>
-							<m:ObjectStatus
-								text="{Status}"
-								state="{
-									path: 'Available',
-									formatter: '.formatAvailableToObjectState'
-								}"
-							/>
-						</template>
-					</Column>
-					<Column width="20%">
-						<m:Label text="Betrag"/>
-						<template>
-							<u:Currency
-								value="{Price}"
-								currency="{CurrencyCode}"
-							/>
-						</template>
-					</Column>
-				</columns>
-			</Table>
-		</m:content>
-	</m:Page>
+				<Table
+					id="orderTable"
+					paste="onPaste"
+					ariaLabelledBy="title"
+					items="{orders>/Orders}"
+				>
+					<columns>
+						<Column width="20%">
+							<Label text="Nummer"/>
+						</Column>
+						<Column width="20%">
+							<Label text="Status"/>
+						</Column>
+						<Column width="20%">
+							<Label text="Kunde"/>
+						</Column>
+						<Column width="20%">
+							<Label text="Datum"/>
+						</Column>
+						<Column width="20%">
+							<Label text="Betrag"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem vAlign="Inherit">
+							<cells>
+								<Text text="{orders>SalesOrder}"/>
+								<Text text="{orders>OverallDeliveryStatus}"/>
+								<Text text="{orders>SoldToParty}"/>
+								<Text text="{orders>SalesOrderDate}"/>
+								<Text text="{orders>TotalNetAmount}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</ScrollContainer>
+		</content>
+	</Page>
 </mvc:View>

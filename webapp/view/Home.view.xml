@@ -6,6 +6,9 @@
 	xmlns:layout="sap.ui.layout"
 	xmlns:f="sap.f"
 	xmlns:card="sap.f.cards"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns:viz.data="sap.viz.ui5.data"
 >
 	<Page id="home" title="Standorte">
 		<headerContent>
@@ -13,7 +16,7 @@
 				src="img/Logo-SMB.png"
 				height="80%"
 			/>
-			<ToolbarSpacer/>
+			<ToolbarSpacer/>	
 			<Toolbar>
 				<Label
 					labelFor="DRS1"
@@ -38,19 +41,64 @@
 				/>
 			</Toolbar>
 		</headerContent>
-		<!-- <Title
-			level="H1"
-			titleStyle="H1"
-			id="_IDGenTitle1"
-			text="Standorte"
-			class="sapUiTinyMarginBegin sapUiMediumMarginTop"
-		/> -->
 		<layout:VerticalLayout
 			width="100%"
-			class="gridWrapper"
+			class="gridWrapper sapUiSmallMargin"
 		>
 			<layout:Grid containerQuery="true">
-				<f:Card headerPosition="Top">
+				<f:Card>
+					<f:header>
+						<card:Header
+							title="Standort Chur"
+							subtitle="Nr. 2050"
+							iconSrc="./img/SMB-Chur.png"
+                            press=".onChartPressed"
+						/>
+					</f:header>
+					<f:content>
+						<VBox
+							height="10rem"
+							class="sapUiSmallMargin"
+							justifyContent="SpaceBetween"
+						>
+							<HBox justifyContent="SpaceAround">
+								<FlexBox
+									width="20rem"
+									height="10rem"
+									alignItems="Start"
+									justifyContent="SpaceBetween"
+								>
+								<viz:Popover id="idPopOver"></viz:Popover>
+								<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+									height='100%' width="100%" vizType='column'>
+									<viz:dataset>
+										<viz.data:FlattenedDataset data="{/milk}">
+											<viz.data:dimensions>
+												<viz.data:DimensionDefinition name="Week"
+													value="{Week}" />
+											</viz.data:dimensions>
+											<viz.data:measures>
+												<viz.data:MeasureDefinition name="Revenue"
+													value="{Revenue}" />
+												<viz.data:MeasureDefinition name="Cost"
+													value="{Cost}" />
+											</viz.data:measures>
+										</viz.data:FlattenedDataset>
+									</viz:dataset>
+					
+									<viz:feeds>
+										<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure"
+											values="Revenue" />
+										<viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension"
+											values="Week" />
+									</viz:feeds>
+								</viz:VizFrame>
+								</FlexBox>
+							</HBox>
+						</VBox>
+					</f:content>
+				</f:Card>
+				<f:Card>
 					<f:header>
 						<card:Header
 							title="Standort Chur"
@@ -98,11 +146,11 @@
 						</VBox>
 					</f:content>
 				</f:Card>
-				<f:Card headerPosition="Top">
+				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort St. Moritz"
-							subtitle="Nr. 20xx"
+							title="Standort Chur"
+							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"
 						/>
@@ -146,59 +194,11 @@
 						</VBox>
 					</f:content>
 				</f:Card>
-				<f:Card >
+				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort St. Moritz"
-							subtitle="Nr. 20xx"
-							iconSrc="./img/SMB-Chur.png"
-                            press=".onChartPressed"
-						/>
-					</f:header>
-					<f:content>
-						<VBox
-							height="10rem"
-							class="sapUiSmallMargin"
-							justifyContent="SpaceBetween"
-						>
-							<HBox justifyContent="SpaceAround">
-								<FlexBox
-									width="20rem"
-									height="10rem"
-									alignItems="Start"
-									justifyContent="SpaceBetween"
-								>
-									<items>
-										<m:InteractiveDonutChart>
-											<m:segments>
-												<m:InteractiveDonutChartSegment
-													label="Ausgeführt"
-													value="40.0"
-													displayedValue="40.0%"
-												/>
-												<m:InteractiveDonutChartSegment
-													label="in Bearbeitung"
-													value="21.5"
-													displayedValue="21.5%"
-												/>
-												<m:InteractiveDonutChartSegment
-													label="erfasst"
-													value="38.5"
-													displayedValue="38.5%"
-												/>
-											</m:segments>
-										</m:InteractiveDonutChart>
-									</items>
-								</FlexBox>
-							</HBox>
-						</VBox>
-					</f:content>
-				</f:Card>
-				<f:Card >
-					<f:header>
-						<card:Header
-							title="Standort St. Moritz"
-							subtitle="Nr. 20xx"
+							title="Standort Chur"
+							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"
 						/>

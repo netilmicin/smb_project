@@ -1,0 +1,1604 @@
+{
+  "Orders": [
+    {
+      "SalesOrder": 1,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Rasia Bearcroft",
+      "SalesOrderDate": "29/08/2022",
+      "TotalNetAmount": 3739476.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 2,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Aluin Coucher",
+      "SalesOrderDate": "25/04/2022",
+      "TotalNetAmount": 2705839.5,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 3,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Dagny Olfert",
+      "SalesOrderDate": "27/07/2022",
+      "TotalNetAmount": 7414562.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 4,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Heddi Abbiss",
+      "SalesOrderDate": "30/08/2022",
+      "TotalNetAmount": 3556692.5,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 5,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Kennith Fere",
+      "SalesOrderDate": "09/01/2022",
+      "TotalNetAmount": 3192210.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 6,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Farly Ramard",
+      "SalesOrderDate": "05/04/2022",
+      "TotalNetAmount": 2520227.6,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 7,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Bonny Tooting",
+      "SalesOrderDate": "22/07/2022",
+      "TotalNetAmount": 5724057.8,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 8,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Tedra Lichtfoth",
+      "SalesOrderDate": "19/07/2022",
+      "TotalNetAmount": 2974876.3,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 9,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Vidovic Bunhill",
+      "SalesOrderDate": "21/02/2022",
+      "TotalNetAmount": 5285639.5,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 10,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Francesca Olenin",
+      "SalesOrderDate": "03/06/2022",
+      "TotalNetAmount": 3383703.4,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 11,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Othella Bertl",
+      "SalesOrderDate": "08/06/2022",
+      "TotalNetAmount": 4088003.9,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 12,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Etan Sweeney",
+      "SalesOrderDate": "30/12/2021",
+      "TotalNetAmount": 4414842.2,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 13,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Sharron Calton",
+      "SalesOrderDate": "05/07/2022",
+      "TotalNetAmount": 8245077.3,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 14,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Amity Yurtsev",
+      "SalesOrderDate": "23/09/2021",
+      "TotalNetAmount": 1541555.3,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 15,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Rad Phillcock",
+      "SalesOrderDate": "10/08/2022",
+      "TotalNetAmount": 8284343.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 16,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Devora Ardron",
+      "SalesOrderDate": "03/09/2022",
+      "TotalNetAmount": 1690520.4,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 17,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Gino Dunston",
+      "SalesOrderDate": "26/06/2022",
+      "TotalNetAmount": 8531995.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 18,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Phebe Brennans",
+      "SalesOrderDate": "16/09/2022",
+      "TotalNetAmount": 3804286.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 19,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Ulrich McCutcheon",
+      "SalesOrderDate": "20/06/2022",
+      "TotalNetAmount": 6564278.8,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 20,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Mathe Asif",
+      "SalesOrderDate": "25/04/2022",
+      "TotalNetAmount": 5057137.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 21,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Fan Alexandrescu",
+      "SalesOrderDate": "19/06/2022",
+      "TotalNetAmount": 5604203.7,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 22,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Jordana McCarlich",
+      "SalesOrderDate": "02/08/2022",
+      "TotalNetAmount": 7654342.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 23,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Farris Enns",
+      "SalesOrderDate": "13/07/2022",
+      "TotalNetAmount": 2034621.5,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 24,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Abbe Nickolls",
+      "SalesOrderDate": "04/10/2021",
+      "TotalNetAmount": 4969506.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 25,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Gannie Borit",
+      "SalesOrderDate": "04/12/2021",
+      "TotalNetAmount": 3539855.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 26,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Silvia Wrettum",
+      "SalesOrderDate": "13/12/2021",
+      "TotalNetAmount": 4905405.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 27,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Padraig O'Hannay",
+      "SalesOrderDate": "27/08/2022",
+      "TotalNetAmount": 1340711.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 28,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Celinka Gurnee",
+      "SalesOrderDate": "21/09/2021",
+      "TotalNetAmount": 6475150.1,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 29,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Jaime Hunnawill",
+      "SalesOrderDate": "19/05/2022",
+      "TotalNetAmount": 2629445.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 30,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Nevsa Peddersen",
+      "SalesOrderDate": "15/02/2022",
+      "TotalNetAmount": 5657463.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 31,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Amery Mc Meekin",
+      "SalesOrderDate": "19/11/2021",
+      "TotalNetAmount": 2532996.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 32,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Viole Ruste",
+      "SalesOrderDate": "15/01/2022",
+      "TotalNetAmount": 2223730.8,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 33,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Alyosha Babar",
+      "SalesOrderDate": "21/07/2022",
+      "TotalNetAmount": 8746983.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 34,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Kesley Mendenhall",
+      "SalesOrderDate": "31/01/2022",
+      "TotalNetAmount": 5789764.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 35,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Vita Hansie",
+      "SalesOrderDate": "02/11/2021",
+      "TotalNetAmount": 3975034.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 36,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Barde McKain",
+      "SalesOrderDate": "31/12/2021",
+      "TotalNetAmount": 1172377.9,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 37,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Kermy Goligly",
+      "SalesOrderDate": "29/06/2022",
+      "TotalNetAmount": 1444639.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 38,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Colan Ede",
+      "SalesOrderDate": "05/12/2021",
+      "TotalNetAmount": 884379.4,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 39,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Aloysius Painswick",
+      "SalesOrderDate": "07/04/2022",
+      "TotalNetAmount": 1033173.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 40,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Shea Baudy",
+      "SalesOrderDate": "18/11/2021",
+      "TotalNetAmount": 6587661.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 41,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Fonz Reany",
+      "SalesOrderDate": "01/09/2022",
+      "TotalNetAmount": 3242267.9,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 42,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Kenn Rendall",
+      "SalesOrderDate": "11/03/2022",
+      "TotalNetAmount": 2950121.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 43,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Franky Gealle",
+      "SalesOrderDate": "22/07/2022",
+      "TotalNetAmount": 2927423.7,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 44,
+      "SalesOffice": "Laax",
+      "SoldToParty": "Abelard Osgardby",
+      "SalesOrderDate": "20/01/2022",
+      "TotalNetAmount": 5242616.8,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 45,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Sonny Farrants",
+      "SalesOrderDate": "21/12/2021",
+      "TotalNetAmount": 4469311.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 46,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Grover Gerrard",
+      "SalesOrderDate": "25/07/2022",
+      "TotalNetAmount": 6022530.5,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 47,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Lettie Richel",
+      "SalesOrderDate": "25/09/2021",
+      "TotalNetAmount": 4094414.5,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 48,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Kori Phoenix",
+      "SalesOrderDate": "30/05/2022",
+      "TotalNetAmount": 7335085.7,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 49,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Adelaide Spofford",
+      "SalesOrderDate": "31/07/2022",
+      "TotalNetAmount": 3141870.3,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 50,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Johnathon Vanyukhin",
+      "SalesOrderDate": "16/12/2021",
+      "TotalNetAmount": 373043.4,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 51,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Regine Bartolomeotti",
+      "SalesOrderDate": "29/06/2022",
+      "TotalNetAmount": 3595990.6,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 52,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Tamarra Rama",
+      "SalesOrderDate": "22/03/2022",
+      "TotalNetAmount": 7788041.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 53,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Delainey Robroe",
+      "SalesOrderDate": "16/12/2021",
+      "TotalNetAmount": 5512254.5,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 54,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Boyd Chillcot",
+      "SalesOrderDate": "16/10/2021",
+      "TotalNetAmount": 6577855.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 55,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Mickey Burmingham",
+      "SalesOrderDate": "12/11/2021",
+      "TotalNetAmount": 8513171.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 56,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Ailina Pettit",
+      "SalesOrderDate": "22/09/2021",
+      "TotalNetAmount": 3349587.0,
+      "OverallDeliveryStatus": "In Bearbeitung"
+    },
+    {
+      "SalesOrder": 57,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Joceline Conechie",
+      "SalesOrderDate": "12/04/2022",
+      "TotalNetAmount": 6091943.6,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 58,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Bealle MacQuist",
+      "SalesOrderDate": "25/12/2021",
+      "TotalNetAmount": 9143537.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 59,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Kiley Tollady",
+      "SalesOrderDate": "14/05/2022",
+      "TotalNetAmount": 1567780.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 60,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Shellysheldon Biggadike",
+      "SalesOrderDate": "11/12/2021",
+      "TotalNetAmount": 2005045.9,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 61,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Ermin Djordjevic",
+      "SalesOrderDate": "22/07/2022",
+      "TotalNetAmount": 5977435.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 62,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Ardith Osbidston",
+      "SalesOrderDate": "26/06/2022",
+      "TotalNetAmount": 8874987.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 63,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Erna Peaddie",
+      "SalesOrderDate": "10/07/2022",
+      "TotalNetAmount": 3673789.9,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 64,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Nollie Landre",
+      "SalesOrderDate": "12/12/2021",
+      "TotalNetAmount": 3410454.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 65,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Nalani Doige",
+      "SalesOrderDate": "22/02/2022",
+      "TotalNetAmount": 9127237.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 66,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Dell Tomley",
+      "SalesOrderDate": "26/07/2022",
+      "TotalNetAmount": 7554936.6,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 67,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Fitzgerald Dagwell",
+      "SalesOrderDate": "01/04/2022",
+      "TotalNetAmount": 7746085.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 68,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Spencer Flahive",
+      "SalesOrderDate": "14/03/2022",
+      "TotalNetAmount": 3386599.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 69,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Rutledge Van Der Vlies",
+      "SalesOrderDate": "09/12/2021",
+      "TotalNetAmount": 8747412.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 70,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Margarita Duffett",
+      "SalesOrderDate": "10/05/2022",
+      "TotalNetAmount": 8521120.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 71,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Judi Castelluzzi",
+      "SalesOrderDate": "27/03/2022",
+      "TotalNetAmount": 2218053.8,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 72,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Warden Everit",
+      "SalesOrderDate": "03/05/2022",
+      "TotalNetAmount": 1324265.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 73,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Jon Jouanet",
+      "SalesOrderDate": "19/12/2021",
+      "TotalNetAmount": 1460429.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 74,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Terri Anersen",
+      "SalesOrderDate": "20/03/2022",
+      "TotalNetAmount": 5233419.6,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 75,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Chickie Scrannage",
+      "SalesOrderDate": "11/07/2022",
+      "TotalNetAmount": 1916650.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 76,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Del Jelleman",
+      "SalesOrderDate": "13/04/2022",
+      "TotalNetAmount": 6174799.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 77,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Felipe Rowden",
+      "SalesOrderDate": "22/09/2021",
+      "TotalNetAmount": 9088346.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 78,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Emiline Krelle",
+      "SalesOrderDate": "23/10/2021",
+      "TotalNetAmount": 2546473.1,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 79,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Dreddy Anster",
+      "SalesOrderDate": "05/11/2021",
+      "TotalNetAmount": 1687174.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 80,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Birch Ballister",
+      "SalesOrderDate": "19/01/2022",
+      "TotalNetAmount": 2506118.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 81,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Frederico Crasswell",
+      "SalesOrderDate": "29/01/2022",
+      "TotalNetAmount": 6291720.6,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 82,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Edgard Stroband",
+      "SalesOrderDate": "15/03/2022",
+      "TotalNetAmount": 8620937.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 83,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Hulda Ireland",
+      "SalesOrderDate": "12/02/2022",
+      "TotalNetAmount": 6796217.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 84,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Alistair Penticost",
+      "SalesOrderDate": "20/08/2022",
+      "TotalNetAmount": 8787888.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 85,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Tallulah Brand-Hardy",
+      "SalesOrderDate": "27/03/2022",
+      "TotalNetAmount": 5793143.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 86,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Artemus Fitkin",
+      "SalesOrderDate": "23/03/2022",
+      "TotalNetAmount": 7353945.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 87,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Ban McManamon",
+      "SalesOrderDate": "05/09/2022",
+      "TotalNetAmount": 8392857.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 88,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Tedman Pluck",
+      "SalesOrderDate": "01/04/2022",
+      "TotalNetAmount": 7322529.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 89,
+      "SalesOffice": "Davos",
+      "SoldToParty": "Bree Brugger",
+      "SalesOrderDate": "27/12/2021",
+      "TotalNetAmount": 5741624.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 90,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Orin Palister",
+      "SalesOrderDate": "05/10/2021",
+      "TotalNetAmount": 1397428.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 91,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Zollie Flew",
+      "SalesOrderDate": "02/04/2022",
+      "TotalNetAmount": 4369350.4,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 92,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Prescott Laxen",
+      "SalesOrderDate": "01/01/2022",
+      "TotalNetAmount": 8937082.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 93,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Shea Denson",
+      "SalesOrderDate": "23/04/2022",
+      "TotalNetAmount": 3048518.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 94,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Ianthe Minchell",
+      "SalesOrderDate": "09/09/2022",
+      "TotalNetAmount": 4528441.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 95,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Archambault Mintram",
+      "SalesOrderDate": "25/08/2022",
+      "TotalNetAmount": 4532111.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 96,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Johanna Guilder",
+      "SalesOrderDate": "30/03/2022",
+      "TotalNetAmount": 7978501.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 97,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Cherey Goldby",
+      "SalesOrderDate": "10/04/2022",
+      "TotalNetAmount": 3316556.9,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 98,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Colline Webley",
+      "SalesOrderDate": "02/07/2022",
+      "TotalNetAmount": 7503715.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 99,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Bekki Ganderton",
+      "SalesOrderDate": "06/08/2022",
+      "TotalNetAmount": 1095727.8,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 100,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Elianore Otham",
+      "SalesOrderDate": "10/03/2022",
+      "TotalNetAmount": 6358317.3,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 101,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Hyacintha Keyho",
+      "SalesOrderDate": "10/01/2022",
+      "TotalNetAmount": 6883546.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 102,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Eugenius Murrow",
+      "SalesOrderDate": "28/06/2022",
+      "TotalNetAmount": 6602150.6,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 103,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Ameline Batecok",
+      "SalesOrderDate": "30/11/2021",
+      "TotalNetAmount": 992061.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 104,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Cloris Winnard",
+      "SalesOrderDate": "08/05/2022",
+      "TotalNetAmount": 7679885.6,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 105,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Merline Dell Casa",
+      "SalesOrderDate": "12/09/2022",
+      "TotalNetAmount": 6888338.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 106,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Beauregard Cow",
+      "SalesOrderDate": "24/09/2021",
+      "TotalNetAmount": 7890081.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 107,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Daniele Vanyarkin",
+      "SalesOrderDate": "06/05/2022",
+      "TotalNetAmount": 3821590.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 108,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Chadd Scrannage",
+      "SalesOrderDate": "28/09/2021",
+      "TotalNetAmount": 5194010.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 109,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Geraldine Kibbey",
+      "SalesOrderDate": "09/07/2022",
+      "TotalNetAmount": 4060507.3,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 110,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Rebbecca Gaskarth",
+      "SalesOrderDate": "20/12/2021",
+      "TotalNetAmount": 1264683.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 111,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Domini Hutcheons",
+      "SalesOrderDate": "15/02/2022",
+      "TotalNetAmount": 9227802.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 112,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Stanwood Sidry",
+      "SalesOrderDate": "12/10/2021",
+      "TotalNetAmount": 7992336.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 113,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Zara Gutans",
+      "SalesOrderDate": "13/07/2022",
+      "TotalNetAmount": 1576260.3,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 114,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Lew Coursor",
+      "SalesOrderDate": "28/04/2022",
+      "TotalNetAmount": 3822607.8,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 115,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Garret Benedite",
+      "SalesOrderDate": "12/03/2022",
+      "TotalNetAmount": 5942957.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 116,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Dulce Thandi",
+      "SalesOrderDate": "16/05/2022",
+      "TotalNetAmount": 5140513.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 117,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Baily Sneden",
+      "SalesOrderDate": "17/02/2022",
+      "TotalNetAmount": 6750260.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 118,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Ade Danigel",
+      "SalesOrderDate": "04/07/2022",
+      "TotalNetAmount": 8363144.1,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 119,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Aryn Cleobury",
+      "SalesOrderDate": "05/01/2022",
+      "TotalNetAmount": 5528198.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 120,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Tony Danbi",
+      "SalesOrderDate": "28/02/2022",
+      "TotalNetAmount": 7902284.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 121,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Rosa Coursor",
+      "SalesOrderDate": "28/09/2021",
+      "TotalNetAmount": 252201.2,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 122,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Hesther Crookshanks",
+      "SalesOrderDate": "28/02/2022",
+      "TotalNetAmount": 5322306.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 123,
+      "SalesOffice": "St. Moritz",
+      "SoldToParty": "Erasmus Stillgoe",
+      "SalesOrderDate": "04/01/2022",
+      "TotalNetAmount": 5529746.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 124,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Zebadiah Metzke",
+      "SalesOrderDate": "28/10/2021",
+      "TotalNetAmount": 1966162.3,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 125,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Remy Hefferan",
+      "SalesOrderDate": "11/05/2022",
+      "TotalNetAmount": 7635455.8,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 126,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Ryon Croux",
+      "SalesOrderDate": "14/03/2022",
+      "TotalNetAmount": 7979264.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 127,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Roger Benion",
+      "SalesOrderDate": "28/10/2021",
+      "TotalNetAmount": 4062712.3,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 128,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Glory McIlvaney",
+      "SalesOrderDate": "12/10/2021",
+      "TotalNetAmount": 8332590.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 129,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Sheeree Croxall",
+      "SalesOrderDate": "26/02/2022",
+      "TotalNetAmount": 1746748.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 130,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Teodorico Rego",
+      "SalesOrderDate": "19/06/2022",
+      "TotalNetAmount": 1658043.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 131,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Fabiano Hazeldean",
+      "SalesOrderDate": "24/10/2021",
+      "TotalNetAmount": 5922768.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 132,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Patrizia Allett",
+      "SalesOrderDate": "05/08/2022",
+      "TotalNetAmount": 8179254.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 133,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Clea Bicknell",
+      "SalesOrderDate": "21/10/2021",
+      "TotalNetAmount": 1762173.1,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 134,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Sam Wince",
+      "SalesOrderDate": "02/11/2021",
+      "TotalNetAmount": 273785.9,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 135,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Bennie Tofanini",
+      "SalesOrderDate": "23/01/2022",
+      "TotalNetAmount": 4820800.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 136,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Arliene Gretton",
+      "SalesOrderDate": "16/09/2022",
+      "TotalNetAmount": 5494500.7,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 137,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Melantha Choke",
+      "SalesOrderDate": "11/07/2022",
+      "TotalNetAmount": 1838811.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 138,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Rurik Usborn",
+      "SalesOrderDate": "20/06/2022",
+      "TotalNetAmount": 2683883.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 139,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Lucian Apple",
+      "SalesOrderDate": "24/12/2021",
+      "TotalNetAmount": 3233163.3,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 140,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Stewart O'Toole",
+      "SalesOrderDate": "08/10/2021",
+      "TotalNetAmount": 2133647.8,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 141,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Rory Fontel",
+      "SalesOrderDate": "10/06/2022",
+      "TotalNetAmount": 7574050.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 142,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Zerk Claw",
+      "SalesOrderDate": "16/05/2022",
+      "TotalNetAmount": 443172.7,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 143,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Desdemona Fludgate",
+      "SalesOrderDate": "11/03/2022",
+      "TotalNetAmount": 261436.6,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 144,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Erich Ambroziak",
+      "SalesOrderDate": "26/07/2022",
+      "TotalNetAmount": 3275500.9,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 145,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Neala Tosney",
+      "SalesOrderDate": "16/01/2022",
+      "TotalNetAmount": 863087.4,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 146,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Piggy Jurkowski",
+      "SalesOrderDate": "08/08/2022",
+      "TotalNetAmount": 608619.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 147,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Nerte Byrde",
+      "SalesOrderDate": "04/01/2022",
+      "TotalNetAmount": 8912677.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 148,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Tammy Jessopp",
+      "SalesOrderDate": "11/09/2022",
+      "TotalNetAmount": 2535798.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 149,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Myrvyn Deboy",
+      "SalesOrderDate": "14/01/2022",
+      "TotalNetAmount": 394085.1,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 150,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Geordie McKennan",
+      "SalesOrderDate": "27/05/2022",
+      "TotalNetAmount": 2613752.5,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 151,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Britte O'Brollachain",
+      "SalesOrderDate": "26/07/2022",
+      "TotalNetAmount": 6792216.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 152,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Denise Daughton",
+      "SalesOrderDate": "30/12/2021",
+      "TotalNetAmount": 316142.1,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 153,
+      "SalesOffice": "Lenzerheide",
+      "SoldToParty": "Car Burdis",
+      "SalesOrderDate": "21/10/2021",
+      "TotalNetAmount": 5032771.0,
+      "OverallDeliveryStatus": "Erfasst"
+    },
+    {
+      "SalesOrder": 154,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Karlen Niezen",
+      "SalesOrderDate": "05/07/2022",
+      "TotalNetAmount": 1418243.1,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 155,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Camellia Marvell",
+      "SalesOrderDate": "16/10/2021",
+      "TotalNetAmount": 4895015.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 156,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Ysabel Cheal",
+      "SalesOrderDate": "05/04/2022",
+      "TotalNetAmount": 217221.4,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 157,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Archibold Basnall",
+      "SalesOrderDate": "02/09/2022",
+      "TotalNetAmount": 8650067.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 158,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Winne Tailby",
+      "SalesOrderDate": "23/07/2022",
+      "TotalNetAmount": 8254766.4,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 159,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Evyn Hocking",
+      "SalesOrderDate": "24/02/2022",
+      "TotalNetAmount": 2457289.5,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 160,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Philly Gregorowicz",
+      "SalesOrderDate": "31/10/2021",
+      "TotalNetAmount": 234197.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 161,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Kathy Sunnucks",
+      "SalesOrderDate": "24/06/2022",
+      "TotalNetAmount": 564886.1,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 162,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Eula Bonin",
+      "SalesOrderDate": "05/10/2021",
+      "TotalNetAmount": 3742624.2,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 163,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Donny Gill",
+      "SalesOrderDate": "03/04/2022",
+      "TotalNetAmount": 4199253.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 164,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Spence Taylorson",
+      "SalesOrderDate": "08/06/2022",
+      "TotalNetAmount": 412071.2,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 165,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Madeleine Grubbe",
+      "SalesOrderDate": "04/03/2022",
+      "TotalNetAmount": 7881928.2,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 166,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Benita Sextone",
+      "SalesOrderDate": "11/03/2022",
+      "TotalNetAmount": 4070161.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 167,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Sayer Gilks",
+      "SalesOrderDate": "07/08/2022",
+      "TotalNetAmount": 1123309.1,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 168,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Louis MacTrusty",
+      "SalesOrderDate": "17/06/2022",
+      "TotalNetAmount": 6170370.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 169,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Clark Measor",
+      "SalesOrderDate": "04/01/2022",
+      "TotalNetAmount": 4277127.8,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 170,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Morry Ondrusek",
+      "SalesOrderDate": "03/06/2022",
+      "TotalNetAmount": 1132097.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 171,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Diego Diem",
+      "SalesOrderDate": "06/03/2022",
+      "TotalNetAmount": 5080042.7,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 172,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Skell Lodder",
+      "SalesOrderDate": "03/01/2022",
+      "TotalNetAmount": 4852015.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 173,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Sheila-kathryn De Cleen",
+      "SalesOrderDate": "16/03/2022",
+      "TotalNetAmount": 3344797.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 174,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Roxie Cogley",
+      "SalesOrderDate": "23/02/2022",
+      "TotalNetAmount": 228703.2,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 175,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Wait Taylorson",
+      "SalesOrderDate": "21/02/2022",
+      "TotalNetAmount": 2116293.1,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 176,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Alene Keddle",
+      "SalesOrderDate": "03/02/2022",
+      "TotalNetAmount": 7084888.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 177,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Lauryn Kull",
+      "SalesOrderDate": "22/09/2021",
+      "TotalNetAmount": 2023796.2,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 178,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Renie Batham",
+      "SalesOrderDate": "05/12/2021",
+      "TotalNetAmount": 6216200.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 179,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Sallyanne O'Devey",
+      "SalesOrderDate": "10/08/2022",
+      "TotalNetAmount": 6736252.4,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 180,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Lazare Kay",
+      "SalesOrderDate": "27/10/2021",
+      "TotalNetAmount": 8421112.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 181,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Lazar Fitton",
+      "SalesOrderDate": "13/01/2022",
+      "TotalNetAmount": 3932770.5,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 182,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Adelind Haylock",
+      "SalesOrderDate": "15/08/2022",
+      "TotalNetAmount": 5329828.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 183,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Brigit Cockman",
+      "SalesOrderDate": "28/07/2022",
+      "TotalNetAmount": 2388466.8,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 184,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Annnora Kepling",
+      "SalesOrderDate": "02/05/2022",
+      "TotalNetAmount": 7251196.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 185,
+      "SalesOffice": "Arosa",
+      "SoldToParty": "Gwendolen De Brett",
+      "SalesOrderDate": "12/02/2022",
+      "TotalNetAmount": 7752283.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 186,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Rowland Cadore",
+      "SalesOrderDate": "11/01/2022",
+      "TotalNetAmount": 3689266.1,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 187,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Maximilianus Mesias",
+      "SalesOrderDate": "15/10/2021",
+      "TotalNetAmount": 2475142.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 188,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Aimee Hustler",
+      "SalesOrderDate": "06/04/2022",
+      "TotalNetAmount": 6949618.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 189,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Keefe Mattek",
+      "SalesOrderDate": "12/07/2022",
+      "TotalNetAmount": 4773217.6,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 190,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Bonnie Ram",
+      "SalesOrderDate": "10/07/2022",
+      "TotalNetAmount": 4276944.9,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 191,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Farand Shewon",
+      "SalesOrderDate": "02/10/2021",
+      "TotalNetAmount": 1401542.3,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 192,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Marlow Cutts",
+      "SalesOrderDate": "26/08/2022",
+      "TotalNetAmount": 7050383.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 193,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Kimberlyn Jesson",
+      "SalesOrderDate": "11/11/2021",
+      "TotalNetAmount": 2071710.4,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 194,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Rogerio Diem",
+      "SalesOrderDate": "14/03/2022",
+      "TotalNetAmount": 3263960.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 195,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Ebeneser Battison",
+      "SalesOrderDate": "25/10/2021",
+      "TotalNetAmount": 6877968.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 196,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Langston Decourcy",
+      "SalesOrderDate": "29/05/2022",
+      "TotalNetAmount": 7077701.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 197,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Lonnie Duddin",
+      "SalesOrderDate": "28/06/2022",
+      "TotalNetAmount": 7468520.6,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 198,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Rose Buston",
+      "SalesOrderDate": "19/11/2021",
+      "TotalNetAmount": 5873941.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 199,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Otto Gover",
+      "SalesOrderDate": "29/12/2021",
+      "TotalNetAmount": 3746310.0,
+      "OverallDeliveryStatus": "Ausgeführt"
+    },
+    {
+      "SalesOrder": 200,
+      "SalesOffice": "Chur",
+      "SoldToParty": "Jessalyn Kirmond",
+      "SalesOrderDate": "29/11/2021",
+      "TotalNetAmount": 2756826.3,
+      "OverallDeliveryStatus": "Ausgeführt"
+    }
+  ]
+}

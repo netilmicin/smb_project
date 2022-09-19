@@ -19,12 +19,13 @@
 				<f:heading>
 					<Title text="Bestellung Nr. 1244"/>
 				</f:heading>
-				<!-- <f:breadcrumbs>
+				<f:breadcrumbs>
 					<Breadcrumbs>
-						<Link text="Standort"/>
+						<Link text="Standorte" href="./index.html"/>
 						<Link text="Chur"/>
 					</Breadcrumbs>
 				</f:breadcrumbs>
+				<!-- 
 				<f:content>
 					<OverflowToolbar>
 						<GenericTag
@@ -44,37 +45,45 @@
 				</f:content> -->
 				<f:actions>
 					<Button
-						text="Edit"
+						text="Bearbeiten"
 						type="Emphasized"
+						press="toggleAreaPriority"
 					/>
 					<Button
-						text="Delete"
+						text="Löschen"
 						type="Transparent"
-					/>
-					<Button
-						text="Copy"
-						type="Transparent"
+						press="deleteArea"
 					/>
 				</f:actions>
 			</f:DynamicPageTitle>
 		</f:title>
 		<f:header>
-			<f:DynamicPageHeader pinnable="true">
+			<f:DynamicPageHeader>
 				<layout:HorizontalLayout allowWrapping="true">
 					<layout:VerticalLayout class="sapUiMediumMarginEnd">
 						<ObjectAttribute
-							title="customer"
-							text="Kunde BMI"
-						/>
-						<ObjectAttribute
-							title="Datum"
-							text="23L"
+							title="Kunde"
+							text="Bundesamt für Bundesämter"
 						/>
 					</layout:VerticalLayout>
-					<layout:VerticalLayout>
-						<ObjectAttribute title="DeliveryDate"/>
-						<ObjectStatus
-							text="Datum"
+					<layout:VerticalLayout class="sapUiMediumMarginEnd">
+						<ObjectAttribute
+							title="Auftragsdatum"
+							text="12.02.2022"
+						/>
+					</layout:VerticalLayout>
+					<layout:VerticalLayout class="sapUiMediumMarginEnd">
+						<ObjectAttribute
+							title="Zahldatum"
+							text="13.02.2022"
+						/>
+					</layout:VerticalLayout>
+					<layout:VerticalLayout class="sapUiMediumMarginEnd">
+						<ObjectAttribute
+							title="Status"
+							text=""
+							emphasized="false"
+							state="Error"
 						/>
 					</layout:VerticalLayout>
 				</layout:HorizontalLayout>
@@ -86,17 +95,22 @@
 				class="sapUiResponsiveContentPadding"
 			>
 				<items>
-					<IconTabFilter text="Products">
+					<IconTabFilter text="Positionen">
 						<Table
 							id="idProductsTable"
 							sticky="HeaderToolbar,ColumnHeaders"
-							
 							class="sapUiSmallNegativeMarginBeginEnd"
 							width="auto"
 						>
 							<columns>
 								<Column width="12em">
 									<Text text="Menge"/>
+								</Column>
+								<Column width="15em">
+									<Text text="ID"/>
+								</Column>
+								<Column width="15em">
+									<Text text="Produkt"/>
 								</Column>
 								<Column
 									minScreenWidth="Tablet"
@@ -105,11 +119,10 @@
 									<Text text="Beschreibung"/>
 								</Column>
 								<Column
-									minScreenWidth="Tablet"
 									demandPopin="true"
 									hAlign="End"
 								>
-									<Text text="Dimensions"/>
+									<Text text="Auftragsdatum"/>
 								</Column>
 								<Column hAlign="End">
 									<Text text="Preis"/>
