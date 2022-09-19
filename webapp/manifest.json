@@ -112,7 +112,7 @@
           "name": "Home",
           "level": 1
         },
-        "secondPage":{
+        "secondPage": {
           "id": "secondPage",
           "name": "SecondPage",
           "level": 1
@@ -124,6 +124,16 @@
       "type": "XML",
       "async": true,
       "id": "App"
+    },
+    "config": {
+      "sample": {
+        "stretch": true,
+        "files": [
+          "SecondPage.view.xml",
+          "SecondPage.controller.js",
+          "manifest.json"
+        ]
+      }
     }
   }
 }
