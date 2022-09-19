@@ -1,0 +1,37 @@
+<mvc:View
+	controllerName=""
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+
+<Page id="home">
+	<headerContent>
+		<Image id="_IDGenImage1"
+			src="img/Logo-SMB.png"
+			height="80%"
+		/>
+		
+	</headerContent>
+	<Title
+		level="H1"
+		titleStyle="H1"
+		id="_IDGenTitle1"
+		text="Kunde"
+		class="sapUiTinyMarginBegin sapUiMediumMarginTop"
+	/>
+	<!-- <layout:VerticalLayout
+		width="100%"
+		class="gridWrapper"
+	>
+		<layout:Grid containerQuery="true">
+			
+			
+			
+		</layout:Grid>
+	</layout:VerticalLayout> -->
+</Page>
+</mvc:View>
