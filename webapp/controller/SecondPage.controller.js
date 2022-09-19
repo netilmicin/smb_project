@@ -78,17 +78,25 @@ sap.ui.define([
 			return bAvailable ? "Success" : "Error";
 		},
 
-		formatAvailableToIcon : function(bAvailable) {
-			return bAvailable ? "sap-icon://accept" : "sap-icon://decline";
-		},
-
-		handleDetailsPress : function(oEvent) {
-			MessageToast.show("Details for product with id " + this.getView().getModel().getProperty("ProductId", oEvent.getSource().getBindingContext()));
-		},
 
 		onPaste: function(oEvent) {
 			var aData = oEvent.getParameter("data");
 			MessageToast.show("Pasted Data: " + aData);
+		},
+
+		onStatusChanged: function(oEvent) {
+			let oTable = this.byId("orderTable");
+			let oComboBox = this.byId("idSelectStatus");
+			let weissNoed = oComboBox.getSelectedKey();
+			switch(weissNoed){
+				case "Ausgeführt":
+					
+					break;
+			}
+		},
+
+		onKundeChanged: function(oEvent) {
+			
 		}
 
 	});
