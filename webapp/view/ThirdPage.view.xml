@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName=""
+	controllerName="smbproject1.0.controller.ThirdPage"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:layout="sap.ui.layout"
@@ -14,11 +14,11 @@
 		class="sapUiNoContentPadding"
 		toggleHeaderOnTitleClick="{/titleClickable}"
 	>
-
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
 					<Title text="Bestellung Nr. 1244"/>
+					<Button press="onPressBackButton" icon="sap-icon://slim-arrow-left"/>
 				</f:heading>
 				<f:breadcrumbs>
 					<Breadcrumbs>

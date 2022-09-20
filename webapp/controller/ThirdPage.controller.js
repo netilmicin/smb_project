@@ -17,6 +17,11 @@ sap.ui.define([
 				sNewPrimaryArea = oTitle.getPrimaryArea() === DynamicPageTitleArea.Begin ? DynamicPageTitleArea.Middle : DynamicPageTitleArea.Begin;
 			oTitle.setPrimaryArea(sNewPrimaryArea);
 		},
+
+		onPressBackButton: function(oEvent) {
+			let oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("secondPage",{});
+		},
 		/* deleteArea : function () {
 			for (let i = 0; i < $orders.length; i++){
 				delete $orders[i].position;

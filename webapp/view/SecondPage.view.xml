@@ -6,8 +6,8 @@
 	height="100%"
 >
 	<Page
+		id="secondPage"
 		class="sapUiContentPadding"
-		title="Standort>Chur"
 		showNavButton="true"
 		navButtonPress=".onPressBackButton"
 	>
@@ -46,13 +46,7 @@
 			</Toolbar>
 		</content>
 		<content>
-			<ScrollContainer
-				focusable="false"
-				height="auto"
-				horizontal="true"
-				vertical="false"
-				width="auto"
-			>
+			<ScrollContainer>
 				<Table
 					id="orderTable"
 					paste="onPaste"
@@ -63,13 +57,13 @@
 						<Column width="5%">
 							<Label text="Nummer"/>
 						</Column>
-						<Column width="15%">
+						<Column width="25%">
 							<Label text="Verkaufsbüro"/>
 						</Column>
-						<Column width="15%">
+						<Column width="25%">
 							<Label text="Status"/>
 						</Column>
-						<Column width="15%">
+						<Column width="25%">
 							<Label text="Kunde"/>
 						</Column>
 						<Column width="10%">
@@ -79,8 +73,11 @@
 							<Label text="Betrag"/>
 						</Column>
 					</columns>
-					<items>				
-					<ColumnListItem  type="Navigation" press=".onRowPressed">
+					<items>
+						<ColumnListItem
+							type="Navigation"
+							press=".onRowPressed"
+						>
 							<cells>
 								<Text text="{orders>SalesOrder}"/>
 								<Text text="{orders>SalesOffice}"/>

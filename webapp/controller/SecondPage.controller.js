@@ -11,55 +11,20 @@ sap.ui.define(
   function (Log, Controller, JSONModel, MessageToast, DateFormat, jQuery) {
     "use strict";
 
-    return Controller.extend("sap.ui.table.sample.Basic.Controller", {
+    return Controller.extend("smbproject1.0.controller.SecondPage", {
+      _onObjectMatched: function (oEvent) {
+        let location = oEvent.getParameter("arguments").location;
+        this.getView().byId("secondPage").setTitle(location);
+      },
       onInit: function () {
         // set explored app's demo model on this sample
         var oJSONModel = new JSONModel("model/mockdata.json");
         this.getView().setModel(oJSONModel, "orders");
-      },
 
-      /* initSampleDataModel : function() {
-			var oModel = new JSONModel();
-
-			var oDateFormat = DateFormat.getDateInstance({source: {pattern: "timestamp"}, pattern: "dd/MM/yyyy"});
-
-			jQuery.ajax(sap.ui.require.toUrl("sap/ui/demo/mock/products.json"), {
-				dataType: "json",
-				success: function(oData) {
-					var aTemp1 = [];
-					var aTemp2 = [];
-					var aSuppliersData = [];
-					var aCategoryData = [];
-					for (var i = 0; i < oData.ProductCollection.length; i++) {
-						var oProduct = oData.ProductCollection[i];
-						if (oProduct.SupplierName && aTemp1.indexOf(oProduct.SupplierName) < 0) {
-							aTemp1.push(oProduct.SupplierName);
-							aSuppliersData.push({Name: oProduct.SupplierName});
-						}
-						if (oProduct.Category && aTemp2.indexOf(oProduct.Category) < 0) {
-							aTemp2.push(oProduct.Category);
-							aCategoryData.push({Name: oProduct.Category});
-						}
-						oProduct.DeliveryDate = (new Date()).getTime() - (i % 10 * 4 * 24 * 60 * 60 * 1000);
-						oProduct.DeliveryDateStr = oDateFormat.format(new Date(oProduct.DeliveryDate));
-						oProduct.Heavy = oProduct.WeightMeasure > 1000 ? "true" : "false";
-						oProduct.Available = oProduct.Status == "Available" ? true : false;
-					}
-
-					oData.Suppliers = aSuppliersData;
-					oData.Categories = aCategoryData;
-
-					oModel.setData(oData);
-				},
-				error: function() {
-					Log.error("failed to load json");
-				}
-			});
-
-			return oModel;
-		}, */
-      formatAvailableToObjectState: function (bAvailable) {
-        return bAvailable ? "Success" : "Error";
+        let oRouter = this.getOwnerComponent().getRouter();
+        oRouter
+          .getRoute("secondPage")
+          .attachMatched(this._onObjectMatched, this);
       },
 
       onPaste: function (oEvent) {
@@ -82,14 +47,14 @@ sap.ui.define(
         oRouter.navTo("home", {});
       },
 
-	  onRowPressed: function(oEvent) {
-		let oItem = oEvent.getSource();
-		let oRouter = this.getOwnerComponent().getRouter();
-		oRouter.navTo("thirdPage",{orderPath: window.encodeURIComponent(oItem.getBindingContext("orders").getPath().substring(1))});
-	},
-      getURL: function (UriParameters) {
-        var sValue = jQuery.sap.getUriParameters();
-		console.log(sValue);
+      onRowPressed: function (oEvent) {
+        let oItem = oEvent.getSource();
+        let oRouter = this.getOwnerComponent().getRouter();
+        oRouter.navTo("thirdPage", {
+          orderPath: window.encodeURIComponent(
+            oItem.getBindingContext("orders").getPath().substring(1)
+          ),
+        });
       },
     });
   }
