@@ -6,7 +6,6 @@
 	height="100%"
 >
 	<Page
-		enableScrolling="false"
 		class="sapUiContentPadding"
 		title="Standort>Chur"
 		showNavButton="true"
@@ -61,19 +60,22 @@
 					items="{orders>/Orders}"
 				>
 					<columns>
-						<Column width="20%">
+						<Column width="5%">
 							<Label text="Nummer"/>
 						</Column>
-						<Column width="20%">
+						<Column width="15%">
+							<Label text="Verkaufsbüro"/>
+						</Column>
+						<Column width="15%">
 							<Label text="Status"/>
 						</Column>
-						<Column width="20%">
+						<Column width="15%">
 							<Label text="Kunde"/>
 						</Column>
-						<Column width="20%">
+						<Column width="10%">
 							<Label text="Datum"/>
 						</Column>
-						<Column width="20%">
+						<Column width="10%">
 							<Label text="Betrag"/>
 						</Column>
 					</columns>
@@ -81,10 +83,11 @@
 						<ColumnListItem vAlign="Inherit">
 							<cells>
 								<Text text="{orders>SalesOrder}"/>
+								<Text text="{orders>SalesOffice}"/>
 								<Text text="{orders>OverallDeliveryStatus}"/>
 								<Text text="{orders>SoldToParty}"/>
 								<Text text="{orders>SalesOrderDate}"/>
-								<Text text="{orders>TotalNetAmount}"/>
+								<Text text="{orders>TotalNetAmount} CHF"/>
 							</cells>
 						</ColumnListItem>
 					</items>

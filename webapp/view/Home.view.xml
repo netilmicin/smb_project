@@ -49,7 +49,7 @@
 				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort Chur"
+							title="Chur"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"
@@ -101,7 +101,7 @@
 				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort St.Moritz"
+							title="St.Moritz"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"
@@ -149,7 +149,7 @@
 				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort Davos"
+							title="Davos"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"
@@ -197,7 +197,7 @@
 				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort Lenzerheide"
+							title="Lenzerheide"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"
@@ -245,7 +245,7 @@
 				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort Laax"
+							title="Laax"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"
@@ -293,7 +293,7 @@
 				<f:Card>
 					<f:header>
 						<card:Header
-							title="Standort Arosa"
+							title="Arosa"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
                             press=".onChartPressed"

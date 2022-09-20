@@ -1,22 +1,24 @@
-sap.ui.define([
-	"sap/base/Log",
-	"sap/ui/core/mvc/Controller",
-	"sap/ui/model/json/JSONModel",
-	"sap/m/MessageToast",
-	"sap/ui/core/format/DateFormat",
-	"sap/ui/thirdparty/jquery"
-], function(Log, Controller, JSONModel, MessageToast, DateFormat, jQuery) {
-	"use strict";
+sap.ui.define(
+  [
+    "sap/base/Log",
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/model/json/JSONModel",
+    "sap/m/MessageToast",
+    "sap/ui/core/format/DateFormat",
+    "sap/ui/thirdparty/jquery",
+    "sap/base/util/UriParameters",
+  ],
+  function (Log, Controller, JSONModel, MessageToast, DateFormat, jQuery) {
+    "use strict";
 
-	return Controller.extend("sap.ui.table.sample.Basic.Controller", {
+    return Controller.extend("sap.ui.table.sample.Basic.Controller", {
+      onInit: function () {
+        // set explored app's demo model on this sample
+        var oJSONModel = new JSONModel("model/mockdata.json");
+        this.getView().setModel(oJSONModel, "orders");
+      },
 
-		onInit : function() {
-			// set explored app's demo model on this sample
-			var oJSONModel = new JSONModel("model/mockdata.json");
-			this.getView().setModel(oJSONModel, "orders");
-		},
-
-		/* initSampleDataModel : function() {
+      /* initSampleDataModel : function() {
 			var oModel = new JSONModel();
 
 			var oDateFormat = DateFormat.getDateInstance({source: {pattern: "timestamp"}, pattern: "dd/MM/yyyy"});
@@ -56,31 +58,34 @@ sap.ui.define([
 
 			return oModel;
 		}, */
-		formatAvailableToObjectState : function(bAvailable) {
-			return bAvailable ? "Success" : "Error";
-		},
+      formatAvailableToObjectState: function (bAvailable) {
+        return bAvailable ? "Success" : "Error";
+      },
 
+      onPaste: function (oEvent) {
+        var aData = oEvent.getParameter("data");
+        MessageToast.show("Pasted Data: " + aData);
+      },
 
-		onPaste: function(oEvent) {
-			var aData = oEvent.getParameter("data");
-			MessageToast.show("Pasted Data: " + aData);
-		},
+      onStatusChanged: function (oEvent) {
+        let oTable = this.byId("orderTable");
+        let oComboBox = this.byId("idSelectStatus");
+        let chosenKey = oComboBox.getSelectedKey();
+        switch (chosenKey) {
+          case "Ausgeführt":
+            break;
+        }
+      },
 
-		onStatusChanged: function(oEvent) {
-			let oTable = this.byId("orderTable");
-			let oComboBox = this.byId("idSelectStatus");
-			let chosenKey = oComboBox.getSelectedKey();
-			switch(chosenKey){
-				case "Ausgeführt":
-					
-					break;
-			}
-		},
+      onPressBackButton: function (oEvent) {
+        let oRouter = this.getOwnerComponent().getRouter();
+        oRouter.navTo("home", {});
+      },
 
-		onPressBackButton: function(oEvent) {
-			let oRouter = this.getOwnerComponent().getRouter();
-			oRouter.navTo("home",{});
-		}
-	});
-
-});
+      getURL: function (UriParameters) {
+        var sValue = jQuery.sap.getUriParameters();
+		console.log(sValue);
+      },
+    });
+  }
+);

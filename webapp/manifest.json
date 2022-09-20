@@ -102,7 +102,7 @@
         },
         {
           "name": "secondPage",
-          "pattern": "secondPage",
+          "pattern": "secondPage/{location}",
           "target": "secondPage"
         },
         {
