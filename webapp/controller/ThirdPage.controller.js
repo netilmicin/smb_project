@@ -4,7 +4,8 @@ sap.ui.define([
 	"sap/f/library",
 	"sap/ui/core/Fragment"
 ], function(
-	Controller
+	Controller,
+	JSONModel
 ) {
 	"use strict";
 

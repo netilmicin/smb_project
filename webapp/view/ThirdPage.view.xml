@@ -25,7 +25,7 @@
 							text="Standorte"
 							href="./index.html"
 						/>
-						<Link text="Chur"/>
+						<Link text="{orders>SalesOffice}"/>
 					</Breadcrumbs>
 				</f:breadcrumbs>
 				<!-- 
@@ -105,27 +105,28 @@
 							class="sapUiSmallNegativeMarginBeginEnd"
 							width="auto"
 						>
+						<!-- Titelspalte: Menge, ID, Produkt, Beschreibung, Auftragsdatum, Preis -->
 							<columns>
 								<Column width="12em">
-									<Text text="Menge"/>
-								</Column>
-								<Column width="15em">
 									<Text text="ID"/>
 								</Column>
 								<Column width="15em">
-									<Text text="Produkt"/>
+									<Text text="Kunde"/>
+								</Column>
+								<Column width="15em">
+									<Text text="Datum"/>
 								</Column>
 								<Column
 									minScreenWidth="Tablet"
 									demandPopin="true"
 								>
-									<Text text="Beschreibung"/>
+									<Text text="Status"/>
 								</Column>
 								<Column
 									demandPopin="true"
 									hAlign="End"
 								>
-									<Text text="Auftragsdatum"/>
+									<Text text="Beschreibung"/>
 								</Column>
 								<Column hAlign="End">
 									<Text text="Preis"/>
@@ -135,6 +136,11 @@
 								<ColumnListItem>
 									<cells>
 										<Text text="{orders>SalesOrder}"/>
+										<Text text="{orders>SoldToParty}"/>
+										<Text text="{orders>SalesOrderDate}"/>
+										<Text text="{orders>OverallDeliveryStatus}"/>
+										<Text text="nothing"/>
+										<Text text="{orders>TotalNetAmount}"/>
 									</cells>
 								</ColumnListItem>
 							</items>

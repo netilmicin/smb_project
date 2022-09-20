@@ -16,7 +16,7 @@
 				src="img/Logo-SMB.png"
 				height="80%"
 			/>
-			<Title text="Standorte>{SalesOffice}"/>
+			<Title text="Standorte>{orders>SalesOffice}"/>
 			<DateRangeSelection secondDateValue=""/>
 		</headerContent>
 		<content>
