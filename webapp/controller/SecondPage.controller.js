@@ -82,6 +82,11 @@ sap.ui.define(
         oRouter.navTo("home", {});
       },
 
+	  onRowPressed: function(oEvent) {
+		let oItem = oEvent.getSource();
+		let oRouter = this.getOwnerComponent().getRouter();
+		oRouter.navTo("thirdPage",{orderPath: window.encodeURIComponent(oItem.getBindingContext("orders").getPath().substring(1))});
+	},
       getURL: function (UriParameters) {
         var sValue = jQuery.sap.getUriParameters();
 		console.log(sValue);

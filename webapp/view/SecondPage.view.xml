@@ -79,8 +79,8 @@
 							<Label text="Betrag"/>
 						</Column>
 					</columns>
-					<items>
-						<ColumnListItem vAlign="Inherit">
+					<items>				
+					<ColumnListItem  type="Navigation" press=".onRowPressed">
 							<cells>
 								<Text text="{orders>SalesOrder}"/>
 								<Text text="{orders>SalesOffice}"/>
