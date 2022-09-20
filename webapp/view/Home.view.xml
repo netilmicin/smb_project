@@ -79,22 +79,31 @@
 										vizType="column"
 									>
 										<viz:dataset>
-											<viz.data:FlattenedDataset data="{/milk}">
+											<viz.data:FlattenedDataset data="{orders}">
 												<viz.data:dimensions>
 													<viz.data:DimensionDefinition
-														name="Week"
-														value="{Week}"
+														name="in Bearbeitung"
+														value="{orders>OverallDeliveryStatus}"
+													/>
+												</viz.data:dimensions>
+												<viz.data:dimensions>
+													<viz.data:DimensionDefinition
+														name="Erfasst"
+														value="{orders>OverallDeliveryStatus}"
+													/>
+												</viz.data:dimensions>
+												<viz.data:dimensions>
+													<viz.data:DimensionDefinition
+														name="Ausgeführt"
+														value="{orders>OverallDeliveryStatus}"
 													/>
 												</viz.data:dimensions>
 												<viz.data:measures>
 													<viz.data:MeasureDefinition
 														name="Revenue"
-														value="{Revenue}"
+														value="{orders>TotalNetAmount}"
 													/>
-													<viz.data:MeasureDefinition
-														name="Cost"
-														value="{Cost}"
-													/>
+
 												</viz.data:measures>
 											</viz.data:FlattenedDataset>
 										</viz:dataset>
@@ -218,102 +227,6 @@
 					<f:header>
 						<card:Header
 							title="Lenzerheide"
-							subtitle="Nr. 2050"
-							iconSrc="./img/SMB-Chur.png"
-							press=".onChartPressed"
-						/>
-					</f:header>
-					<f:content>
-						<VBox
-							height="10rem"
-							class="sapUiSmallMargin"
-							justifyContent="SpaceBetween"
-						>
-							<HBox justifyContent="SpaceAround">
-								<FlexBox
-									width="20rem"
-									height="10rem"
-									alignItems="Start"
-									justifyContent="SpaceBetween"
-								>
-									<items>
-										<m:InteractiveDonutChart>
-											<m:segments>
-												<m:InteractiveDonutChartSegment
-													label="Ausgeführt"
-													value="40.0"
-													displayedValue="40.0%"
-												/>
-												<m:InteractiveDonutChartSegment
-													label="in Bearbeitung"
-													value="21.5"
-													displayedValue="21.5%"
-												/>
-												<m:InteractiveDonutChartSegment
-													label="erfasst"
-													value="38.5"
-													displayedValue="38.5%"
-												/>
-											</m:segments>
-										</m:InteractiveDonutChart>
-									</items>
-								</FlexBox>
-							</HBox>
-						</VBox>
-					</f:content>
-				</f:Card>
-				<f:Card>
-					<f:header>
-						<card:Header
-							title="Laax"
-							subtitle="Nr. 2050"
-							iconSrc="./img/SMB-Chur.png"
-							press=".onChartPressed"
-						/>
-					</f:header>
-					<f:content>
-						<VBox
-							height="10rem"
-							class="sapUiSmallMargin"
-							justifyContent="SpaceBetween"
-						>
-							<HBox justifyContent="SpaceAround">
-								<FlexBox
-									width="20rem"
-									height="10rem"
-									alignItems="Start"
-									justifyContent="SpaceBetween"
-								>
-									<items>
-										<m:InteractiveDonutChart>
-											<m:segments>
-												<m:InteractiveDonutChartSegment
-													label="Ausgeführt"
-													value="40.0"
-													displayedValue="40.0%"
-												/>
-												<m:InteractiveDonutChartSegment
-													label="in Bearbeitung"
-													value="21.5"
-													displayedValue="21.5%"
-												/>
-												<m:InteractiveDonutChartSegment
-													label="erfasst"
-													value="38.5"
-													displayedValue="38.5%"
-												/>
-											</m:segments>
-										</m:InteractiveDonutChart>
-									</items>
-								</FlexBox>
-							</HBox>
-						</VBox>
-					</f:content>
-				</f:Card>
-				<f:Card>
-					<f:header>
-						<card:Header
-							title="Arosa"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
 							press=".onChartPressed"

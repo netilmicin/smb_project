@@ -17,7 +17,7 @@
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
-					<Title text="Bestellung Nr. 1244"/>
+					<Title text="Bestellung Nr. {orders>SalesOrder}"/>
 				</f:heading>
 				<f:breadcrumbs>
 					<Breadcrumbs>
@@ -25,7 +25,10 @@
 							text="Standorte"
 							href="./index.html"
 						/>
-						<Link text="{orders>SalesOffice}"/>
+						<Link
+							text="{orders>SalesOffice}"
+							href="./index.html#/secondPage/{orders>SalesOffice}"
+						/>
 					</Breadcrumbs>
 				</f:breadcrumbs>
 				<!-- 
@@ -66,25 +69,25 @@
 					<layout:VerticalLayout class="sapUiMediumMarginEnd">
 						<ObjectAttribute
 							title="Kunde"
-							text="Bundesamt für Bundesämter"
+							text="{orders>SoldToParty}"
 						/>
 					</layout:VerticalLayout>
 					<layout:VerticalLayout class="sapUiMediumMarginEnd">
 						<ObjectAttribute
 							title="Auftragsdatum"
-							text="12.02.2022"
+							text="{orders>SalesOrderDate}"
 						/>
 					</layout:VerticalLayout>
 					<layout:VerticalLayout class="sapUiMediumMarginEnd">
 						<ObjectAttribute
 							title="Zahldatum"
-							text="13.02.2022"
+							text="{orders>SalesOrderDate}"
 						/>
 					</layout:VerticalLayout>
 					<layout:VerticalLayout class="sapUiMediumMarginEnd">
 						<ObjectAttribute
 							title="Status"
-							text=""
+							text="{orders>OverallDeliveryStatus}"
 							emphasized="false"
 							state="Error"
 						/>
@@ -105,7 +108,7 @@
 							class="sapUiSmallNegativeMarginBeginEnd"
 							width="auto"
 						>
-						<!-- Titelspalte: Menge, ID, Produkt, Beschreibung, Auftragsdatum, Preis -->
+							<!-- Titelspalte: Menge, ID, Produkt, Beschreibung, Auftragsdatum, Preis -->
 							<columns>
 								<Column width="12em">
 									<Text text="ID"/>
