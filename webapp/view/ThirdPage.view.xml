@@ -18,11 +18,13 @@
 			<f:DynamicPageTitle>
 				<f:heading>
 					<Title text="Bestellung Nr. 1244"/>
-					<Button press="onPressBackButton" icon="sap-icon://slim-arrow-left"/>
 				</f:heading>
 				<f:breadcrumbs>
 					<Breadcrumbs>
-						<Link text="Standorte" href="./index.html"/>
+						<Link
+							text="Standorte"
+							href="./index.html"
+						/>
 						<Link text="Chur"/>
 					</Breadcrumbs>
 				</f:breadcrumbs>
@@ -129,6 +131,13 @@
 									<Text text="Preis"/>
 								</Column>
 							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{orders>SalesOrder}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
 							<!-- <items>
 								<ColumnListItem>
 									<cells>
@@ -159,36 +168,9 @@
 					</IconTabFilter>
 					<!-- <IconTabFilter text="Attachments">
 						<Text text="Attachments go here ..."/>
-					</IconTabFilter>
-					<IconTabFilter text="Notes">
-						<Text text="Notes go here ..."/>
-					</IconTabFilter>
-					<IconTabFilter text="People">
-						<Text text="People content goes here ..."/>
-					</IconTabFilter> -->
+					</IconTabFilter>-->
 				</items>
 			</IconTabBar>
 		</f:content>
-		<!--
-		<f:footer>
-			<OverflowToolbar>
-				<Button
-					icon="sap-icon://message-popup"
-					text="{/messagesLength}"
-					type="Emphasized"
-					press="onMessageButtonPress"
-					visible="{= !!${/messagesLength}}"
-				/>
-				<ToolbarSpacer/>
-				<Button
-					type="Accept"
-					text="Accept"
-				/>
-				<Button
-					type="Reject"
-					text="Reject"
-				/>
-			</OverflowToolbar>
-		</f:footer> -->
 	</f:DynamicPage>
 </mvc:View>

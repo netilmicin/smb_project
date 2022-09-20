@@ -12,6 +12,20 @@ sap.ui.define([
 		getPage : function() {
 			return this.byId("dynamicPageId");
 		},
+		onInit: function(){
+			var oJSONModel = new JSONModel("model/mockdata.json");
+			this.getView().setModel(oJSONModel, "orders");
+			let oRouter = this.getOwnerComponent().getRouter();
+			oRouter.getRoute("thirdPage").attachPatternMatched(this._onObjectMatched, this);
+		},
+		_onObjectMatched:function(oEvent){
+			let path = window.decodeURIComponent(oEvent.getParameter("arguments").orders);
+			console.log(path)
+			this.getView().bindElement({
+				path:  path,
+				model: "orders"
+			})
+		},
 		toggleAreaPriority : function () {
 			var oTitle = this.getPage().getTitle(),
 				sNewPrimaryArea = oTitle.getPrimaryArea() === DynamicPageTitleArea.Begin ? DynamicPageTitleArea.Middle : DynamicPageTitleArea.Begin;

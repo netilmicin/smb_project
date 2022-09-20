@@ -48,12 +48,14 @@ sap.ui.define(
       },
 
       onRowPressed: function (oEvent) {
-        let oItem = oEvent.getSource();
+        let oItem = oEvent
+          .getSource()
+          .getBindingContext("orders")
+          .getPath();
+		  
         let oRouter = this.getOwnerComponent().getRouter();
         oRouter.navTo("thirdPage", {
-          orderPath: window.encodeURIComponent(
-            oItem.getBindingContext("orders").getPath().substring(1)
-          ),
+          orders: window.encodeURIComponent(oItem)
         });
       },
     });

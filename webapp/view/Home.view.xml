@@ -10,13 +10,14 @@
 	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
 	xmlns:viz.data="sap.viz.ui5.data"
 >
-	<Page id="home" title="Standorte">
+	<Page id="home">
 		<headerContent>
 			<Image
 				src="img/Logo-SMB.png"
 				height="80%"
 			/>
-			<ToolbarSpacer/>	
+			<Title text="Standorte"/>
+			<ToolbarSpacer/>
 			<Toolbar>
 				<Label
 					labelFor="DRS1"
@@ -37,7 +38,6 @@
 					displayFormat="{
 						path: '/dateFormatDRS1'
 					}"
-					
 				/>
 			</Toolbar>
 		</headerContent>
@@ -52,7 +52,7 @@
 							title="Chur"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
-                            press=".onChartPressed"
+							press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>
@@ -68,31 +68,51 @@
 									alignItems="Start"
 									justifyContent="SpaceBetween"
 								>
-								<viz:Popover id="idPopOver"></viz:Popover>
-								<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
-									height='100%' width="100%" vizType='column'>
-									<viz:dataset>
-										<viz.data:FlattenedDataset data="{/milk}">
-											<viz.data:dimensions>
-												<viz.data:DimensionDefinition name="Week"
-													value="{Week}" />
-											</viz.data:dimensions>
-											<viz.data:measures>
-												<viz.data:MeasureDefinition name="Revenue"
-													value="{Revenue}" />
-												<viz.data:MeasureDefinition name="Cost"
-													value="{Cost}" />
-											</viz.data:measures>
-										</viz.data:FlattenedDataset>
-									</viz:dataset>
-					
-									<viz:feeds>
-										<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure"
-											values="Revenue" />
-										<viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension"
-											values="Week" />
-									</viz:feeds>
-								</viz:VizFrame>
+									<viz:Popover id="idPopOver"/>
+									<viz:VizFrame
+										id="idVizFrame"
+										uiConfig="{
+											applicationSet: 'fiori'
+										}"
+										height="100%"
+										width="100%"
+										vizType="column"
+									>
+										<viz:dataset>
+											<viz.data:FlattenedDataset data="{/milk}">
+												<viz.data:dimensions>
+													<viz.data:DimensionDefinition
+														name="Week"
+														value="{Week}"
+													/>
+												</viz.data:dimensions>
+												<viz.data:measures>
+													<viz.data:MeasureDefinition
+														name="Revenue"
+														value="{Revenue}"
+													/>
+													<viz.data:MeasureDefinition
+														name="Cost"
+														value="{Cost}"
+													/>
+												</viz.data:measures>
+											</viz.data:FlattenedDataset>
+										</viz:dataset>
+										<viz:feeds>
+											<viz.feeds:FeedItem
+												id="valueAxisFeed"
+												uid="valueAxis"
+												type="Measure"
+												values="Revenue"
+											/>
+											<viz.feeds:FeedItem
+												id="categoryAxisFeed"
+												uid="categoryAxis"
+												type="Dimension"
+												values="Week"
+											/>
+										</viz:feeds>
+									</viz:VizFrame>
 								</FlexBox>
 							</HBox>
 						</VBox>
@@ -104,7 +124,7 @@
 							title="St.Moritz"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
-                            press=".onChartPressed"
+							press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>
@@ -152,7 +172,7 @@
 							title="Davos"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
-                            press=".onChartPressed"
+							press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>
@@ -200,7 +220,7 @@
 							title="Lenzerheide"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
-                            press=".onChartPressed"
+							press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>
@@ -248,7 +268,7 @@
 							title="Laax"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
-                            press=".onChartPressed"
+							press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>
@@ -296,7 +316,7 @@
 							title="Arosa"
 							subtitle="Nr. 2050"
 							iconSrc="./img/SMB-Chur.png"
-                            press=".onChartPressed"
+							press=".onChartPressed"
 						/>
 					</f:header>
 					<f:content>

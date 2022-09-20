@@ -12,6 +12,11 @@
 		navButtonPress=".onPressBackButton"
 	>
 		<headerContent>
+			<Image
+				src="img/Logo-SMB.png"
+				height="80%"
+			/>
+			<Title text="Standorte>{SalesOffice}"/>
 			<DateRangeSelection secondDateValue=""/>
 		</headerContent>
 		<content>
@@ -75,7 +80,7 @@
 					</columns>
 					<items>
 						<ColumnListItem
-							type="Navigation"
+							type="Active"
 							press=".onRowPressed"
 						>
 							<cells>

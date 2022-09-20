@@ -107,7 +107,7 @@
         },
         {
           "name": "thirdPage",
-          "pattern": "thirdPage",
+          "pattern": "thirdPage/{orders}",
           "target": "thirdPage"
         }
       ],
