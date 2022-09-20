@@ -75,6 +75,11 @@ sap.ui.define([
 					
 					break;
 			}
+		},
+
+		onPressBackButton: function(oEvent) {
+			let oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("home",{});
 		}
 	});
 

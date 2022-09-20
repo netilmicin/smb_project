@@ -9,6 +9,8 @@
 		enableScrolling="false"
 		class="sapUiContentPadding"
 		title="Standort>Chur"
+		showNavButton="true"
+		navButtonPress=".onPressBackButton"
 	>
 		<headerContent>
 			<DateRangeSelection secondDateValue=""/>
