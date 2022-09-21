@@ -27,16 +27,34 @@
 						class="sapUiResponsiveContentPadding"
 					/>
 				</f:heading>
+				<f:content>
+					<HBox>
+						<Label
+							labelFor="DRS1"
+							text="Datum auswählen:"
+							width="100%"
+						/>
+						<DateRangeSelection
+							id="DRS1"
+							delimiter="{
+								path: '/delimiterDRS1'
+							}"
+							dateValue="{
+								path: '/dateValueDRS1'
+							}"
+							secondDateValue="{
+								path: '/secondDateValueDRS1'
+							}"
+							displayFormat="{
+								path: '/dateFormatDRS1'
+							}"
+						/>
+					</HBox>
+				</f:content>
+				
 			</f:DynamicPageTitle>
 		</f:title>
 		<f:header>
-			<!-- <f:DynamicPageTitle>
-			<Image
-				src="img/Logo-SMB.png"
-				height="80%"
-			/>
-			<Title text="Standorte"/>
-		</f:DynamicPageTitle> -->
 			<!-- <Toolbar> -->
 			<!-- <Label
 				labelFor="DRS1"
