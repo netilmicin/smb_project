@@ -26,7 +26,7 @@ sap.ui.define(
     return Controller.extend("smbproject1.0.controller.SecondPage", {
       _onObjectMatched: function (oEvent) {
         let location = oEvent.getParameter("arguments").location;
-        this.getView().byId("secondPage").setTitle(location);
+        this.getView().byId("secondPageTitle").setText(location);
         let oView = this.getView();
         let sValue = oEvent.getParameter("arguments").location;
         let oFilter = new Filter("SalesOffice", FilterOperator.EQ, sValue);

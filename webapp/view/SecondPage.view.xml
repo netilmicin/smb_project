@@ -1,28 +1,41 @@
 <mvc:View
 	controllerName="smbproject1.0.controller.SecondPage"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:core="sap.ui.core"
 	xmlns="sap.m"
+	xmlns:f="sap.f"
+	displayBlock="true"
 	height="100%"
+	busyIndicatorDelay="0"
+	xmlns:core="sap.ui.core"
 >
-	<Page
+	<f:DynamicPage
 		id="secondPage"
-		class="sapUiContentPadding"
-		showNavButton="true"
-		navButtonPress=".onPressBackButton"
+		stickySubheaderProvider="iconTabBar"
+		class="sapUiNoContentPadding"
+		toggleHeaderOnTitleClick="{/titleClickable}"
 	>
-		<headerContent>
-			<Image
-				src="img/Logo-SMB.png"
-				height="80%"
-			/>
-			<Title text="Standorte>{orders>SalesOffice}"/>
-			<DateRangeSelection secondDateValue=""/>
-		</headerContent>
-		<content>
-			<ToolbarSpacer/>
-			<Toolbar width="">
-				<content>
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title
+						id="secondPageTitle"
+						text=""
+					/>
+				</f:heading>
+				
+				<f:breadcrumbs>
+					<Breadcrumbs>
+						<Link
+							text="Standorte"
+							href="./index.html"
+						/>
+					</Breadcrumbs>
+				</f:breadcrumbs>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader>
+				<f:content>
 					<Title
 						text="Optionen: "
 						level="H2"
@@ -47,10 +60,15 @@
 							/>
 						</items>
 					</ComboBox>
-				</content>
-			</Toolbar>
-		</content>
-		<content>
+					<DateRangeSelection
+						width="20%"
+						minDate=""
+						secondDateValue=""
+					/>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
 			<ScrollContainer>
 				<Table
 					id="orderTable"
@@ -95,6 +113,6 @@
 					</items>
 				</Table>
 			</ScrollContainer>
-		</content>
-	</Page>
+		</f:content>
+	</f:DynamicPage>
 </mvc:View>
