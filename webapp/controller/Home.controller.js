@@ -7,6 +7,14 @@ sap.ui.define(
             this.getRouter().navTo("configuration");
         }, */
 
+        /**
+         * @override
+         */
+         /* onInit: function() {
+          Controller.prototype.onInit.apply(this, arguments);
+          const obj = JSON.parse(orders);
+          console.log(obj.OverallDeliveryStatus);
+        },  */
       onChartPressed: function (oEvent) {
         let oRouter = this.getOwnerComponent().getRouter();
         oRouter.navTo("secondPage", {

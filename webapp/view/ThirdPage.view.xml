@@ -31,8 +31,7 @@
 						/>
 					</Breadcrumbs>
 				</f:breadcrumbs>
-				<!-- 
-				<f:content>
+				<!-- <f:content>
 					<OverflowToolbar>
 						<GenericTag
 							text="SR"
@@ -48,7 +47,7 @@
 							/>
 						</GenericTag>
 					</OverflowToolbar>
-				</f:content> -->
+				</f:content> 
 				<f:actions>
 					<Button
 						text="Bearbeiten"
@@ -60,7 +59,7 @@
 						type="Transparent"
 						press="deleteArea"
 					/>
-				</f:actions>
+				</f:actions> -->
 			</f:DynamicPageTitle>
 		</f:title>
 		<f:header>
