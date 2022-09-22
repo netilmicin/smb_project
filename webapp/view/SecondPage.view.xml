@@ -22,7 +22,6 @@
 						text=""
 					/>
 				</f:heading>
-				
 				<f:breadcrumbs>
 					<Breadcrumbs>
 						<Link
@@ -40,31 +39,37 @@
 						text="Optionen: "
 						level="H2"
 					/>
-					<ComboBox
-						id="idSelectStatus"
-						placeholder="Status"
-						change="onStatusChanged"
-					>
+					<FlexBox>
+						<ComboBox
+							id="idSelectStatus"
+							placeholder="Status"
+							change="onStatusChanged"
+						>
+							<items>
+								<core:Item
+									key="Ausgeführt"
+									text="Ausgeführt"
+								/>
+								<core:Item
+									key="In Bearbeitung"
+									text="In Bearbeitung"
+								/>
+								<core:Item
+									key="Erfasst"
+									text="Erfasst"
+								/>
+							</items>
+						</ComboBox>
+					</FlexBox>
+					<FlexBox justifyContent="End">
 						<items>
-							<core:Item
-								key="Ausgeführt"
-								text="Ausgeführt"
-							/>
-							<core:Item
-								key="InBearbeitung"
-								text="In Bearbeitung"
-							/>
-							<core:Item
-								key="Erfasst"
-								text="Erfasst"
+							<DateRangeSelection
+								width="65%"
+								minDate=""
+								secondDateValue=""
 							/>
 						</items>
-					</ComboBox>
-					<DateRangeSelection
-						width="20%"
-						minDate=""
-						secondDateValue=""
-					/>
+					</FlexBox>
 				</f:content>
 			</f:DynamicPageHeader>
 		</f:header>
@@ -107,7 +112,7 @@
 								<Text text="{orders>OverallDeliveryStatus}"/>
 								<Text text="{orders>SoldToParty}"/>
 								<Text text="{orders>SalesOrderDate}"/>
-								<Text text="{orders>TotalNetAmount} CHF"/>
+								<ObjectNumber number="{path:'orders>TotalNetAmount'}"/>
 							</cells>
 						</ColumnListItem>
 					</items>
