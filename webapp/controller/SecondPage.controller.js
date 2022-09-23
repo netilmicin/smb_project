@@ -9,26 +9,27 @@ sap.ui.define(
     "sap/base/util/UriParameters",
     "sap/ui/model/FilterOperator",
     "sap/ui/model/FilterType",
-	"sap/ui/core/format/NumberFormat",
+    "sap/ui/core/format/NumberFormat",
+    "../model/formatter",
   ],
   function (
     Log,
-	Controller,
-	JSONModel,
-	MessageToast,
-	DateFormat,
-	Filter,
-	UriParameters,
-	FilterOperator,
-	FilterType,
-	NumberFormat
+    Controller,
+    JSONModel,
+    MessageToast,
+    DateFormat,
+    Filter,
+    UriParameters,
+    FilterOperator,
+    FilterType,
+    NumberFormat,
+    formatter
   ) {
     "use strict";
     return Controller.extend("smbproject1.0.controller.SecondPage", {
-      _filters: [],
-
       _sLocation: "",
       _sStatus: "",
+      formatter: formatter,
 
       _onObjectMatched: function (oEvent) {
         let location = oEvent.getParameter("arguments").location;
@@ -43,6 +44,13 @@ sap.ui.define(
         // set explored app's demo model on this sample
         var oJSONModel = new JSONModel("model/mockdata.json");
         this.getView().setModel(oJSONModel, "orders");
+
+        this.getView().setModel(
+          new JSONModel({
+            currency: "CHF",
+          }),
+          "view"
+        );
 
         let oRouter = this.getOwnerComponent().getRouter();
         oRouter

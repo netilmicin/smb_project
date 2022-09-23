@@ -60,15 +60,12 @@
 								/>
 							</items>
 						</ComboBox>
-					</FlexBox>
-					<FlexBox justifyContent="End">
-						<items>
-							<DateRangeSelection
-								width="65%"
-								minDate=""
-								secondDateValue=""
-							/>
-						</items>
+						<HBox width="100%"/>
+						<DateRangeSelection
+							width="13rem"
+							minDate=""
+							secondDateValue=""
+						/>
 					</FlexBox>
 				</f:content>
 			</f:DynamicPageHeader>
@@ -112,7 +109,17 @@
 								<Text text="{orders>OverallDeliveryStatus}"/>
 								<Text text="{orders>SoldToParty}"/>
 								<Text text="{orders>SalesOrderDate}"/>
-								<ObjectNumber number="{path:'orders>TotalNetAmount'}"/>
+								<ObjectNumber number="{
+									parts: [{
+										path: 'orders>TotalNetAmount'
+									}, {
+										path: 'view>/currency'
+									}],
+									type: 'sap.ui.model.type.Currency',
+									formatOptions: {
+										showMeasure: true
+									}
+								}"/>
 							</cells>
 						</ColumnListItem>
 					</items>
