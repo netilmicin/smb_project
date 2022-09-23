@@ -14,7 +14,7 @@ sap.ui.define(
        * @override
        */
       onInit: function () {
-        Controller.prototype.onInit.apply(this, arguments);
+        /* Controller.prototype.onInit.apply(this, arguments);
         let oSalesOfficeModel = new JSONModel("model/mockdata.json");
         let setOfSalesOffices = new Set();
         oSalesOfficeModel.forEach((element) => {
@@ -23,7 +23,7 @@ sap.ui.define(
         setOfSalesOffices.forEach((element) => {
           console.log(element);
         });
-        
+         */
       },
 
       onChartPressed: function (oEvent) {
