@@ -18,6 +18,13 @@ sap.ui.define([
 			this.getView().setModel(oJSONModel, "orders");
 			let oRouter = this.getOwnerComponent().getRouter();
 			oRouter.getRoute("thirdPage").attachPatternMatched(this._onObjectMatched, this);
+			this.getView().setModel(
+				new JSONModel({
+				  currency: "CHF",
+				}),
+				"view"
+			  );
+	  
 		},
 		_onObjectMatched:function(oEvent){
 			let path = window.decodeURIComponent(oEvent.getParameter("arguments").orders);

@@ -23,13 +23,11 @@ sap.ui.define(
     FilterOperator,
     FilterType,
     NumberFormat,
-    formatter
   ) {
     "use strict";
     return Controller.extend("smbproject1.0.controller.SecondPage", {
       _sLocation: "",
       _sStatus: "",
-      formatter: formatter,
 
       _onObjectMatched: function (oEvent) {
         let location = oEvent.getParameter("arguments").location;
