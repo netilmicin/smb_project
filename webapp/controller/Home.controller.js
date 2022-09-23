@@ -14,16 +14,85 @@ sap.ui.define(
        * @override
        */
       onInit: function () {
-        Controller.prototype.onInit.apply(this, arguments);
         let oSalesOfficeModel = new JSONModel("model/mockdata.json");
-        let setOfSalesOffices = new Set();
-        oSalesOfficeModel.forEach((element) => {
-          setOfSalesOffices.add(element.Orders>SalesOffice);
+        this.getView().setModel(new JSONModel(), "display");
+
+        oSalesOfficeModel.dataLoaded().then(() => {
+          let oData = oSalesOfficeModel.getData();
+          let setOfSalesOffices = new Set();
+          let arraySalesOffices = [];
+
+          oData.Orders.forEach((element) => {
+            setOfSalesOffices.add(element.SalesOffice);
+          });
+
+          /*  MODELNAME = display
+          {
+            stati: [
+              {
+                standort: aaros,
+                statuses : [
+                  {status: inBearbeitung, zahl: 7 }
+                  {name: abgeschlossen, zahl: 7 }
+                  {name: offen, zahl: 7 }
+                ]
+              },
+              {
+                standort: aaros,
+                statuses : [
+                  {status: inBearbeitung, zahl: 7 }
+                  {name: abgeschlossen, zahl: 7 }
+                  {name: offen, zahl: 7 }
+                ]
+              } 
+            ]
+          }
+        */
+          //[Arosa, Lenzerheide, Chur, St. Moriz, Laax, Davos]
+          setOfSalesOffices.forEach((element) => {
+            arraySalesOffices.push({
+              SalesOffice: element,
+              Statuses: [
+                {
+                  status: "In Bearbeitung",
+                  anzahl: oData.Orders.filter((e) => {
+                    let condition1 = element === e.SalesOffice;
+                    let condition2 =
+                      "In Bearbeitung" === e.OverallDeliveryStatus;
+                    return condition1 && condition2;
+                  }).length,
+                },
+                {
+                  status: "Ausgeführt",
+                  anzahl: oData.Orders.filter((e) => {
+                    let condition1 = element === e.SalesOffice;
+                    let condition2 = "Ausgeführt" === e.OverallDeliveryStatus;
+                    return condition1 && condition2;
+                  }).length,
+                },
+                {
+                  status: "Erfasst",
+                  anzahl: oData.Orders.filter((e) => {
+                    let condition1 = element === e.SalesOffice;
+                    let condition2 = "Erfasst" === e.OverallDeliveryStatus;
+                    return condition1 && condition2;
+                  }).length,
+                },
+              ],
+            });
+          });
+          console.log(arraySalesOffices);
+          this.getView()
+            .getModel("display")
+            .setData({ stati: arraySalesOffices });
         });
-        setOfSalesOffices.forEach((element) => {
-          console.log(element);
-        });
-        
+
+        /* function sumArray(overallDeliveryStatus2010) {
+          let sum = 0;
+          overallDeliveryStatus2010.forEach(element => {
+            sum+= element;
+          });
+        } */
       },
 
       onChartPressed: function (oEvent) {
