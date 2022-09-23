@@ -28,15 +28,6 @@ sap.ui.define(
       _sLocation: "",
       _sStatus: "",
 
-      _onObjectMatched: function (oEvent) {
-        let location = oEvent.getParameter("arguments").location;
-        this.getView().byId("secondPageTitle").setText(location);
-        let oView = this.getView();
-
-        this._sLocation = location;
-
-        this._applyFilters();
-      },
       onInit: function () {
         // set explored app's demo model on this sample
         var oJSONModel = new JSONModel("model/mockdata.json");
@@ -53,6 +44,15 @@ sap.ui.define(
         oRouter
           .getRoute("secondPage")
           .attachMatched(this._onObjectMatched, this);
+      },
+      _onObjectMatched: function (oEvent) {
+        let location = oEvent.getParameter("arguments").location;
+        this.getView().byId("secondPageTitle").setText(location);
+        let oView = this.getView();
+
+        this._sLocation = location;
+
+        this._applyFilters();
       },
 
       onPaste: function (oEvent) {
