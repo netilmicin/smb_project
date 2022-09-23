@@ -40,14 +40,14 @@ sap.ui.define([
 			oTitle.setPrimaryArea(sNewPrimaryArea);
 		},
 
-		onPressBackButton: function(oEvent) {
+		/* onPressBackButton: function(oEvent) {
 			let oRouter = this.getOwnerComponent().getRouter();
 			oRouter.navTo("secondPage",{});
 		},
-		/* deleteArea : function () {
+		 deleteArea : function () {
 			for (let i = 0; i < $orders.length; i++){
 				delete $orders[i].position;
 			}
-		} */
+		}  */
 	});
 });

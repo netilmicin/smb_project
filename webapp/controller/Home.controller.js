@@ -30,11 +30,11 @@ sap.ui.define(
           {
             stati: [
               {
-                SalesOffice: aaros,
+                SalesOffice: Arosa,
                 Statuses : [
                   {status: inBearbeitung, anzahl: 7 }
-                  {status: abgeschlossen, anzahl: 7 }
-                  {status: offen, anzahl: 7 }
+                  {status: Ausgeführt, anzahl: 7 }
+                  {status: Erfasst, anzahl: 7 }
                 ]
               }, 
             ]
