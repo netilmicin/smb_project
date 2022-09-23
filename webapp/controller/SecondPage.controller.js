@@ -10,7 +10,6 @@ sap.ui.define(
     "sap/ui/model/FilterOperator",
     "sap/ui/model/FilterType",
     "sap/ui/core/format/NumberFormat",
-    "../model/formatter",
   ],
   function (
     Log,
@@ -22,14 +21,12 @@ sap.ui.define(
     UriParameters,
     FilterOperator,
     FilterType,
-    NumberFormat,
-    formatter
+    NumberFormat
   ) {
     "use strict";
     return Controller.extend("smbproject1.0.controller.SecondPage", {
       _sLocation: "",
       _sStatus: "",
-      formatter: formatter,
 
       _onObjectMatched: function (oEvent) {
         let location = oEvent.getParameter("arguments").location;

@@ -96,6 +96,7 @@ sap.ui.define(
       },
 
       onChartPressed: function (oEvent) {
+        console.log("salü zemme");
         let oRouter = this.getOwnerComponent().getRouter();
 
         oRouter.navTo("secondPage", {
