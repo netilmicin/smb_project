@@ -30,21 +30,13 @@ sap.ui.define(
           {
             stati: [
               {
-                standort: aaros,
-                statuses : [
-                  {status: inBearbeitung, zahl: 7 }
-                  {name: abgeschlossen, zahl: 7 }
-                  {name: offen, zahl: 7 }
+                SalesOffice: aaros,
+                Statuses : [
+                  {status: inBearbeitung, anzahl: 7 }
+                  {status: abgeschlossen, anzahl: 7 }
+                  {status: offen, anzahl: 7 }
                 ]
-              },
-              {
-                standort: aaros,
-                statuses : [
-                  {status: inBearbeitung, zahl: 7 }
-                  {name: abgeschlossen, zahl: 7 }
-                  {name: offen, zahl: 7 }
-                ]
-              } 
+              }, 
             ]
           }
         */
@@ -86,17 +78,9 @@ sap.ui.define(
             .getModel("display")
             .setData({ stati: arraySalesOffices });
         });
-
-        /* function sumArray(overallDeliveryStatus2010) {
-          let sum = 0;
-          overallDeliveryStatus2010.forEach(element => {
-            sum+= element;
-          });
-        } */
       },
 
       onChartPressed: function (oEvent) {
-        console.log("salü zemme");
         let oRouter = this.getOwnerComponent().getRouter();
 
         oRouter.navTo("secondPage", {

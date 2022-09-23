@@ -51,136 +51,170 @@
 			</f:DynamicPageHeader>
 		</f:header>
 		<f:content>
-			<layout:Grid containerQuery="true">
-				<f:Card>
-					<f:header>
-						<card:Header
-							title="Chur"
-							subtitle="Nr. 2050"
-							iconSrc="./img/Chur.png"
-							press=".onChartPressed"
-						/>
-					</f:header>
-					<f:content>
-						<VBox
-							height="10rem"
-							class="sapUiSmallMargin"
-							justifyContent="SpaceBetween"
-						>
-							<HBox justifyContent="SpaceAround">
-								<FlexBox
-									width="20rem"
-									height="10rem"
-									alignItems="Start"
-									justifyContent="SpaceBetween"
-								>
-									<viz:Popover id="idPopOver"/>
-									<viz:VizFrame
-										id="idVizFrame"
-										uiConfig="{
-											applicationSet: 'fiori'
-										}"
-										height="100%"
-										width="100%"
+			<layout:Grid
+				containerQuery="true"
+				class="sapUiSmallMarginTop"
+				content="{display>/stati}"
+			>
+				<layout:content>
+					<f:Card>
+						<f:header>
+							<card:Header
+								title="{display>SalesOffice}"
+								iconSrc="./img/Chur.png"
+								press=".onChartPressed"
+							/>
+						</f:header>
+						<f:content>
+							<viz:VizFrame
+								id="idVizFrame"
+								uiConfig="{
+									applicationSet: 'fiori'
+								}"
+								vizProperties="{title: {visible:'false'}}"
+								height="20rem"
+								width="30rem"
+								vizType="donut"
+							>
+								<viz:dataset>
+									<viz.data:FlattenedDataset data="{display>Statuses}">
+										<viz.data:dimensions>
+											<viz.data:DimensionDefinition
+												name="Status"
+												value="{display>status}"
+											/>
+										</viz.data:dimensions>
+										<viz.data:measures>
+											<viz.data:MeasureDefinition
+												name="Anzahl"
+												value="{display>anzahl}"
+											/>
+										</viz.data:measures>
+									</viz.data:FlattenedDataset>
+								</viz:dataset>
+								<viz:feeds>
+									<viz.feeds:FeedItem
+										uid="size"
+										type="Measure"
+										values="Anzahl"
+									/>
+									<viz.feeds:FeedItem
+										uid="color"
+										type="Dimension"
+										values="Status"
+									/>
+								</viz:feeds>
+							</viz:VizFrame>
+							<!-- <VBox
+								height="10rem"
+								class="sapUiSmallMargin"
+								justifyContent="SpaceBetween"
+							>
+								<HBox justifyContent="SpaceAround">
+									<FlexBox
+										width="20rem"
+										height="10rem"
+										alignItems="Start"
+										justifyContent="SpaceBetween"
 									>
-										<viz:dataset>
-											<viz.data:FlattenedDataset data="{orders>/Orders}">
-												<viz.data:dimensions>
-													<viz.data:DimensionDefinition
-														name="in Bearbeitung"
-														value="{orders>OverallDeliveryStatus}"
-													/>
-												</viz.data:dimensions>
-												<viz.data:dimensions>
-													<viz.data:DimensionDefinition
-														name="Erfasst"
-														value="{orders>OverallDeliveryStatus}"
-													/>
-												</viz.data:dimensions>
-												<viz.data:dimensions>
-													<viz.data:DimensionDefinition
-														name="Ausgeführt"
-														value="{orders>OverallDeliveryStatus}"
-													/>
-												</viz.data:dimensions>
-												<viz.data:measures>
-													<viz.data:MeasureDefinition
-														name="Revenue"
-														value="{orders>TotalNetAmount}"
-													/>
-												</viz.data:measures>
-											</viz.data:FlattenedDataset>
-										</viz:dataset>
-										<viz:feeds>
-											<viz.feeds:FeedItem
-												id="valueAxisFeed"
-												uid="valueAxis"
-												type="Measure"
-												values="Revenue"
-											/>
-											<viz.feeds:FeedItem
-												id="categoryAxisFeed"
-												uid="categoryAxis"
-												type="Dimension"
-												values="Week"
-											/>
-										</viz:feeds>
-									</viz:VizFrame>
-								</FlexBox>
-							</HBox>
-						</VBox>
-					</f:content>
-				</f:Card>
-				<f:Card>
-					<f:header>
-						<card:Header
-							title="St.Moritz"
-							subtitle="Nr. 2050"
-							iconSrc="./img/StMoritz.png"
-							press=".onChartPressed"
-						/>
-					</f:header>
-					<f:content>
-						<VBox
-							height="10rem"
-							class="sapUiSmallMargin"
-							justifyContent="SpaceBetween"
-						>
-							<HBox justifyContent="SpaceAround">
-								<FlexBox
-									width="20rem"
-									height="10rem"
-									alignItems="Start"
-									justifyContent="SpaceBetween"
-								>
-									<items>
-										<m:InteractiveDonutChart>
-											<m:segments>
-												<m:InteractiveDonutChartSegment
-													label="Ausgeführt"
-													value="{
-														path: '/orders/'
-													}"
-													displayedValue="40.0%"
+									<Label text = "{display>status}"/>
+										<viz:Popover id="idPopOver"/>
+										<viz:VizFrame
+											id="idVizFrame"
+											uiConfig="{
+												applicationSet: 'fiori'
+											}"
+											height="100%"
+											width="100%"
+											vizType="donut"
+										>
+											<viz:dataset>
+												<viz.data:FlattenedDataset data="{display>Statuses}">
+													<viz.data:dimensions>
+														<viz.data:DimensionDefinition
+															name="Status"
+															value="{display>status}"
+														/>
+													</viz.data:dimensions>
+													<viz.data:measures>
+														<viz.data:MeasureDefinition
+															name="Anzahl"
+															value="{display>anzahl}"
+														/>
+													</viz.data:measures>
+												</viz.data:FlattenedDataset>
+											</viz:dataset>
+											<viz:feeds>
+												<viz.feeds:FeedItem
+													id="valueAxisFeed"
+													uid="size"
+													type="Measure"
+													values="{display>anzahl}"
 												/>
-												<m:InteractiveDonutChartSegment
-													label="in Bearbeitung"
-													value="21.5"
-													displayedValue="21.5%"
+												<viz.feeds:FeedItem
+													id="categoryAxisFeed"
+													uid="color"
+													type="Dimension"
+													values="{display>status}"
 												/>
-												<m:InteractiveDonutChartSegment
-													label="erfasst"
-													value="38.5"
-													displayedValue="38.5%"
-												/>
-											</m:segments>
-										</m:InteractiveDonutChart>
-									</items>
-								</FlexBox>
-							</HBox>
-						</VBox>
-					</f:content>
-				</f:Card>
+											</viz:feeds>
+										</viz:VizFrame>
+									</FlexBox>
+								</HBox>
+							</VBox> -->
+						</f:content>
+					</f:Card>
+					<!-- <f:Card>
+						<f:header>
+							<card:Header
+								title="St.Moritz"
+								subtitle="Nr. 2050"
+								iconSrc="./img/StMoritz.png"
+								press=".onChartPressed"
+							/>
+						</f:header>
+						<f:content>
+							<VBox
+								height="10rem"
+								class="sapUiSmallMargin"
+								justifyContent="SpaceBetween"
+							>
+								<HBox justifyContent="SpaceAround">
+									<FlexBox
+										width="20rem"
+										height="10rem"
+										alignItems="Start"
+										justifyContent="SpaceBetween"
+									>
+										<items>
+											<m:InteractiveDonutChart>
+												<m:segments>
+													<m:InteractiveDonutChartSegment
+														label="Ausgeführt"
+														value="{
+															path: '/orders/'
+														}"
+														displayedValue="40.0%"
+													/>
+													<m:InteractiveDonutChartSegment
+														label="in Bearbeitung"
+														value="21.5"
+														displayedValue="21.5%"
+													/>
+													<m:InteractiveDonutChartSegment
+														label="erfasst"
+														value="38.5"
+														displayedValue="38.5%"
+													/>
+												</m:segments>
+											</m:InteractiveDonutChart>
+										</items>
+									</FlexBox>
+								</HBox>
+							</VBox>
+						</f:content>
+					</f:Card> -->
+				</layout:content>
 			</layout:Grid>
 		</f:content>
 	</f:DynamicPage>
