@@ -10,15 +10,7 @@
 	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
 	xmlns:viz.data="sap.viz.ui5.data"
 >
-	<f:DynamicPage
-		id="home"
-		backgroundDesign="Standard"
-		fitContent="false"
-		headerExpanded="true"
-		preserveHeaderStateOnScroll="false"
-		showFooter="false"
-		toggleHeaderOnTitleClick="true"
-	>
+	<f:DynamicPage id="home">
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
@@ -32,10 +24,7 @@
 			</f:DynamicPageTitle>
 		</f:title>
 		<f:header>
-			<f:DynamicPageHeader
-				backgroundDesign="Solid"
-				pinnable="true"
-			>
+			<f:DynamicPageHeader backgroundDesign="Solid">
 				<f:content>
 					<FlexBox justifyContent="End">
 						<items>
@@ -97,7 +86,7 @@
 											}"
 											height="100%"
 											width="100%"
-											vizType="column"
+											
 										>
 											<viz:dataset>
 												<viz.data:FlattenedDataset data="{orders>/Orders}">
