@@ -142,7 +142,17 @@
 										<Text text="{orders>SalesOrderDate}"/>
 										<Text text="{orders>OverallDeliveryStatus}"/>
 										<Text text="nothing"/>
-										<Text text="{orders>TotalNetAmount}"/>
+										<ObjectNumber number="{
+											parts: [{
+												path: 'orders>TotalNetAmount'
+											}, {
+												path: 'view>/currency'
+											}],
+											type: 'sap.ui.model.type.Currency',
+											formatOptions: {
+												showMeasure: true
+											}
+										}"/>
 									</cells>
 								</ColumnListItem>
 							</items>
